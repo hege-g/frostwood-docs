@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="gk-c-title gk-c-desc" shape-rendering="geometricPrecision">
+  <title id="gk-c-title">Frostwood izometrikus voxel gémkapocs ikon — C függelékjel</title>
+  <desc id="gk-c-desc">Izometrikus, voxel-szerkezetű Frostwood gémkapocs ikon. A külső hurok fagyasztott üveghatású, a belső visszahajló rész matt világos anyagú. A jobb alsó sarokban C betűjelzés látható.</desc>
+  <defs>
+    <linearGradient id="gk-c-bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <filter id="gk-c-softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="11.5"/>
+    </filter>
+    <linearGradient id="gk-c-glassTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".94"/>
+      <stop offset="100%" stop-color="#CFE4F8" stop-opacity=".82"/>
+    </linearGradient>
+    <linearGradient id="gk-c-glassLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6F2FD" stop-opacity=".88"/>
+      <stop offset="100%" stop-color="#B5D0EA" stop-opacity=".78"/>
+    </linearGradient>
+    <linearGradient id="gk-c-glassRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D7E8F7" stop-opacity=".86"/>
+      <stop offset="100%" stop-color="#9FC1E0" stop-opacity=".76"/>
+    </linearGradient>
+    <linearGradient id="gk-c-coreTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAFAFA"/>
+      <stop offset="100%" stop-color="#E1E5E8"/>
+    </linearGradient>
+    <linearGradient id="gk-c-coreLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6EAED"/>
+      <stop offset="100%" stop-color="#CDD3D8"/>
+    </linearGradient>
+    <linearGradient id="gk-c-coreRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D8DEE4"/>
+      <stop offset="100%" stop-color="#BEC7CF"/>
+    </linearGradient>
+    <style>
+      .bg-panel { fill: url(#gk-c-bgLight); }
+      .guide { opacity:.10; fill:none; stroke:#9DAFC1; stroke-width:2; }
+      .shadow { fill:#9AACBE; opacity:.15; }
+      .glass-top,.glass-left,.glass-right,.core-top,.core-left,.core-right,.badge-top,.badge-left,.badge-right {
+        stroke:#7A92A9; stroke-width:1.35; stroke-linejoin:round; vector-effect:non-scaling-stroke;
+      }
+      .glass-top { fill:url(#gk-c-glassTop); }
+      .glass-left { fill:url(#gk-c-glassLeft); }
+      .glass-right { fill:url(#gk-c-glassRight); }
+      .core-top { fill:url(#gk-c-coreTop); }
+      .core-left { fill:url(#gk-c-coreLeft); }
+      .core-right { fill:url(#gk-c-coreRight); }
+      .badge-top { fill:#F5F8FB; }
+      .badge-left { fill:#D2DDE8; }
+      .badge-right { fill:#AEBECE; }
+      .glyph { fill:#484848; }
+      @media (prefers-color-scheme: dark) {
+        .bg-panel { fill:#252525; }
+        .guide { stroke:#536577; opacity:.22; }
+        .shadow { fill:#000000; opacity:.22; }
+        .glass-top,.glass-left,.glass-right,.core-top,.core-left,.core-right,.badge-top,.badge-left,.badge-right { stroke:#CFD8E2; }
+        .badge-top { fill:#2A2A2A; }
+        .badge-left { fill:#252525; }
+        .badge-right { fill:#343434; }
+        .glyph { fill:#F0F0F0; }
+      }
+    </style>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="34" class="bg-panel"/>
+  <g aria-hidden="true" class="guide">
+    <path d="M80 144 160 96 240 144 160 192Z"/>
+    <path d="M160 192v72M80 144v72l80 48 80-48v-72"/>
+  </g>
+  <ellipse aria-hidden="true" class="shadow" cx="247" cy="385" rx="124" ry="31" filter="url(#gk-c-softShadow)"/>
+  <g aria-hidden="true">
+    <polygon class="glass-top" points="236.00,251.50 257.00,263.50 236.00,275.75 215.00,263.50"/>
+    <polygon class="glass-left" points="215.00,263.50 236.00,275.75 236.00,297.25 215.00,285.00"/>
+    <polygon class="glass-right" points="257.00,263.50 236.00,275.75 236.00,297.25 257.00,285.00"/>
+    <polygon class="glass-top" points="257.00,263.50 278.00,275.75 257.00,287.75 236.00,275.75"/>
+    <polygon class="glass-left" points="236.00,275.75 257.00,287.75 257.00,309.25 236.00,297.25"/>
+    <polygon class="glass-right" points="278.00,275.75 257.00,287.75 257.00,309.25 278.00,297.25"/>
+    <polygon class="glass-top" points="278.00,275.75 299.00,287.75 278.00,300.00 257.00,287.75"/>
+    <polygon class="glass-left" points="257.00,287.75 278.00,300.00 278.00,321.50 257.00,309.25"/>
+    <polygon class="glass-right" points="299.00,287.75 278.00,300.00 278.00,321.50 299.00,309.25"/>
+    <polygon class="glass-top" points="299.00,287.75 320.00,300.00 299.00,312.00 278.00,300.00"/>
+    <polygon class="glass-left" points="278.00,300.00 299.00,312.00 299.00,333.50 278.00,321.50"/>
+    <polygon class="glass-right" points="320.00,300.00 299.00,312.00 299.00,333.50 320.00,321.50"/>
+    <polygon class="glass-top" points="320.00,300.00 341.00,312.00 320.00,324.25 299.00,312.00"/>
+    <polygon class="glass-left" points="299.00,312.00 320.00,324.25 320.00,345.75 299.00,333.50"/>
+    <polygon class="glass-right" points="341.00,312.00 320.00,324.25 320.00,345.75 341.00,333.50"/>
+    <polygon class="glass-top" points="341.00,312.00 362.00,324.25 341.00,336.25 320.00,324.25"/>
+    <polygon class="glass-left" points="320.00,324.25 341.00,336.25 341.00,357.75 320.00,345.75"/>
+    <polygon class="glass-right" points="362.00,324.25 341.00,336.25 341.00,357.75 362.00,345.75"/>
+    <polygon class="glass-top" points="341.00,336.25 362.00,348.50 341.00,360.50 320.00,348.50"/>
+    <polygon class="glass-left" points="320.00,348.50 341.00,360.50 341.00,382.00 320.00,370.00"/>
+    <polygon class="glass-right" points="362.00,348.50 341.00,360.50 341.00,382.00 362.00,370.00"/>
+    <polygon class="glass-top" points="341.00,360.50 362.00,372.75 341.00,384.75 320.00,372.75"/>
+    <polygon class="glass-left" points="320.00,372.75 341.00,384.75 341.00,406.25 320.00,394.25"/>
+    <polygon class="glass-right" points="362.00,372.75 341.00,384.75 341.00,406.25 362.00,394.25"/>
+    <polygon class="glass-top" points="320.00,372.75 341.00,384.75 320.00,397.00 299.00,384.75"/>
+    <polygon class="glass-left" points="299.00,384.75 320.00,397.00 320.00,418.50 299.00,406.25"/>
+    <polygon class="glass-right" points="341.00,384.75 320.00,397.00 320.00,418.50 341.00,406.25"/>
+    <polygon class="glass-top" points="299.00,384.75 320.00,397.00 299.00,409.00 278.00,397.00"/>
+    <polygon class="glass-left" points="278.00,397.00 299.00,409.00 299.00,430.50 278.00,418.50"/>
+    <polygon class="glass-right" points="320.00,397.00 299.00,409.00 299.00,430.50 320.00,418.50"/>
+    <polygon class="glass-top" points="278.00,397.00 299.00,409.00 278.00,421.25 257.00,409.00"/>
+    <polygon class="glass-left" points="257.00,409.00 278.00,421.25 278.00,442.75 257.00,430.50"/>
+    <polygon class="glass-right" points="299.00,409.00 278.00,421.25 278.00,442.75 299.00,430.50"/>
+    <polygon class="glass-top" points="257.00,409.00 278.00,421.25 257.00,433.25 236.00,421.25"/>
+    <polygon class="glass-left" points="236.00,421.25 257.00,433.25 257.00,454.75 236.00,442.75"/>
+    <polygon class="glass-right" points="278.00,421.25 257.00,433.25 257.00,454.75 278.00,442.75"/>
+    <polygon class="glass-top" points="215.00,409.00 236.00,421.25 215.00,433.25 194.00,421.25"/>
+    <polygon class="glass-left" points="194.00,421.25 215.00,433.25 215.00,454.75 194.00,442.75"/>
+    <polygon class="glass-right" points="236.00,421.25 215.00,433.25 215.00,454.75 236.00,442.75"/>
+    <polygon class="glass-top" points="194.00,397.00 215.00,409.00 194.00,421.25 173.00,409.00"/>
+    <polygon class="glass-left" points="173.00,409.00 194.00,421.25 194.00,442.75 173.00,430.50"/>
+    <polygon class="glass-right" points="215.00,409.00 194.00,421.25 194.00,442.75 215.00,430.50"/>
+    <polygon class="glass-top" points="173.00,384.75 194.00,397.00 173.00,409.00 152.00,397.00"/>
+    <polygon class="glass-left" points="152.00,397.00 173.00,409.00 173.00,430.50 152.00,418.50"/>
+    <polygon class="glass-right" points="194.00,397.00 173.00,409.00 173.00,430.50 194.00,418.50"/>
+    <polygon class="glass-top" points="152.00,372.75 173.00,384.75 152.00,397.00 131.00,384.75"/>
+    <polygon class="glass-left" points="131.00,384.75 152.00,397.00 152.00,418.50 131.00,406.25"/>
+    <polygon class="glass-right" points="173.00,384.75 152.00,397.00 152.00,418.50 173.00,406.25"/>
+    <polygon class="glass-top" points="131.00,360.50 152.00,372.75 131.00,384.75 110.00,372.75"/>
+    <polygon class="glass-left" points="110.00,372.75 131.00,384.75 131.00,406.25 110.00,394.25"/>
+    <polygon class="glass-right" points="152.00,372.75 131.00,384.75 131.00,406.25 152.00,394.25"/>
+    <polygon class="glass-top" points="131.00,336.25 152.00,348.50 131.00,360.50 110.00,348.50"/>
+    <polygon class="glass-left" points="110.00,348.50 131.00,360.50 131.00,382.00 110.00,370.00"/>
+    <polygon class="glass-right" points="152.00,348.50 131.00,360.50 131.00,382.00 152.00,370.00"/>
+    <polygon class="glass-top" points="131.00,312.00 152.00,324.25 131.00,336.25 110.00,324.25"/>
+    <polygon class="glass-left" points="110.00,324.25 131.00,336.25 131.00,357.75 110.00,345.75"/>
+    <polygon class="glass-right" points="152.00,324.25 131.00,336.25 131.00,357.75 152.00,345.75"/>
+    <polygon class="glass-top" points="152.00,300.00 173.00,312.00 152.00,324.25 131.00,312.00"/>
+    <polygon class="glass-left" points="131.00,312.00 152.00,324.25 152.00,345.75 131.00,333.50"/>
+    <polygon class="glass-right" points="173.00,312.00 152.00,324.25 152.00,345.75 173.00,333.50"/>
+    <polygon class="glass-top" points="173.00,287.75 194.00,300.00 173.00,312.00 152.00,300.00"/>
+    <polygon class="glass-left" points="152.00,300.00 173.00,312.00 173.00,333.50 152.00,321.50"/>
+    <polygon class="glass-right" points="194.00,300.00 173.00,312.00 173.00,333.50 194.00,321.50"/>
+    <polygon class="glass-top" points="215.00,287.75 236.00,300.00 215.00,312.00 194.00,300.00"/>
+    <polygon class="glass-left" points="194.00,300.00 215.00,312.00 215.00,333.50 194.00,321.50"/>
+    <polygon class="glass-right" points="236.00,300.00 215.00,312.00 215.00,333.50 236.00,321.50"/>
+    <polygon class="glass-top" points="236.00,300.00 257.00,312.00 236.00,324.25 215.00,312.00"/>
+    <polygon class="glass-left" points="215.00,312.00 236.00,324.25 236.00,345.75 215.00,333.50"/>
+    <polygon class="glass-right" points="257.00,312.00 236.00,324.25 236.00,345.75 257.00,333.50"/>
+    <polygon class="glass-top" points="257.00,312.00 278.00,324.25 257.00,336.25 236.00,324.25"/>
+    <polygon class="glass-left" points="236.00,324.25 257.00,336.25 257.00,357.75 236.00,345.75"/>
+    <polygon class="glass-right" points="278.00,324.25 257.00,336.25 257.00,357.75 278.00,345.75"/>
+    <polygon class="glass-top" points="278.00,324.25 299.00,336.25 278.00,348.50 257.00,336.25"/>
+    <polygon class="glass-left" points="257.00,336.25 278.00,348.50 278.00,370.00 257.00,357.75"/>
+    <polygon class="glass-right" points="299.00,336.25 278.00,348.50 278.00,370.00 299.00,357.75"/>
+    <polygon class="glass-top" points="299.00,336.25 320.00,348.50 299.00,360.50 278.00,348.50"/>
+    <polygon class="glass-left" points="278.00,348.50 299.00,360.50 299.00,382.00 278.00,370.00"/>
+    <polygon class="glass-right" points="320.00,348.50 299.00,360.50 299.00,382.00 320.00,370.00"/>
+    <polygon class="glass-top" points="278.00,348.50 299.00,360.50 278.00,372.75 257.00,360.50"/>
+    <polygon class="glass-left" points="257.00,360.50 278.00,372.75 278.00,394.25 257.00,382.00"/>
+    <polygon class="glass-right" points="299.00,360.50 278.00,372.75 278.00,394.25 299.00,382.00"/>
+    <polygon class="glass-top" points="257.00,360.50 278.00,372.75 257.00,384.75 236.00,372.75"/>
+    <polygon class="glass-left" points="236.00,372.75 257.00,384.75 257.00,406.25 236.00,394.25"/>
+    <polygon class="glass-right" points="278.00,372.75 257.00,384.75 257.00,406.25 278.00,394.25"/>
+    <polygon class="glass-top" points="236.00,372.75 257.00,384.75 236.00,397.00 215.00,384.75"/>
+    <polygon class="glass-left" points="215.00,384.75 236.00,397.00 236.00,418.50 215.00,406.25"/>
+    <polygon class="glass-right" points="257.00,384.75 236.00,397.00 236.00,418.50 257.00,406.25"/>
+    <polygon class="glass-top" points="194.00,372.75 215.00,384.75 194.00,397.00 173.00,384.75"/>
+    <polygon class="glass-left" points="173.00,384.75 194.00,397.00 194.00,418.50 173.00,406.25"/>
+    <polygon class="glass-right" points="215.00,384.75 194.00,397.00 194.00,418.50 215.00,406.25"/>
+    <polygon class="glass-top" points="173.00,360.50 194.00,372.75 173.00,384.75 152.00,372.75"/>
+    <polygon class="glass-left" points="152.00,372.75 173.00,384.75 173.00,406.25 152.00,394.25"/>
+    <polygon class="glass-right" points="194.00,372.75 173.00,384.75 173.00,406.25 194.00,394.25"/>
+    <polygon class="glass-top" points="152.00,348.50 173.00,360.50 152.00,372.75 131.00,360.50"/>
+    <polygon class="glass-left" points="131.00,360.50 152.00,372.75 152.00,394.25 131.00,382.00"/>
+    <polygon class="glass-right" points="173.00,360.50 152.00,372.75 152.00,394.25 173.00,382.00"/>
+  </g>
+  <g>
+    <polygon class="core-top" points="215.00,288.00 236.00,300.25 215.00,312.25 194.00,300.25"/>
+    <polygon class="core-left" points="194.00,300.25 215.00,312.25 215.00,333.75 194.00,321.75"/>
+    <polygon class="core-right" points="236.00,300.25 215.00,312.25 215.00,333.75 236.00,321.75"/>
+    <polygon class="core-top" points="236.00,300.25 257.00,312.25 236.00,324.50 215.00,312.25"/>
+    <polygon class="core-left" points="215.00,312.25 236.00,324.50 236.00,346.00 215.00,333.75"/>
+    <polygon class="core-right" points="257.00,312.25 236.00,324.50 236.00,346.00 257.00,333.75"/>
+    <polygon class="core-top" points="257.00,312.25 278.00,324.50 257.00,336.50 236.00,324.50"/>
+    <polygon class="core-left" points="236.00,324.50 257.00,336.50 257.00,358.00 236.00,346.00"/>
+    <polygon class="core-right" points="278.00,324.50 257.00,336.50 257.00,358.00 278.00,346.00"/>
+    <polygon class="core-top" points="257.00,336.50 278.00,348.75 257.00,360.75 236.00,348.75"/>
+    <polygon class="core-left" points="236.00,348.75 257.00,360.75 257.00,382.25 236.00,370.25"/>
+    <polygon class="core-right" points="278.00,348.75 257.00,360.75 257.00,382.25 278.00,370.25"/>
+    <polygon class="core-top" points="257.00,360.75 278.00,373.00 257.00,385.00 236.00,373.00"/>
+    <polygon class="core-left" points="236.00,373.00 257.00,385.00 257.00,406.50 236.00,394.50"/>
+    <polygon class="core-right" points="278.00,373.00 257.00,385.00 257.00,406.50 278.00,394.50"/>
+    <polygon class="core-top" points="236.00,373.00 257.00,385.00 236.00,397.25 215.00,385.00"/>
+    <polygon class="core-left" points="215.00,385.00 236.00,397.25 236.00,418.75 215.00,406.50"/>
+    <polygon class="core-right" points="257.00,385.00 236.00,397.25 236.00,418.75 257.00,406.50"/>
+    <polygon class="core-top" points="194.00,373.00 215.00,385.00 194.00,397.25 173.00,385.00"/>
+    <polygon class="core-left" points="173.00,385.00 194.00,397.25 194.00,418.75 173.00,406.50"/>
+    <polygon class="core-right" points="215.00,385.00 194.00,397.25 194.00,418.75 215.00,406.50"/>
+    <polygon class="core-top" points="173.00,360.75 194.00,373.00 173.00,385.00 152.00,373.00"/>
+    <polygon class="core-left" points="152.00,373.00 173.00,385.00 173.00,406.50 152.00,394.50"/>
+    <polygon class="core-right" points="194.00,373.00 173.00,385.00 173.00,406.50 194.00,394.50"/>
+    <polygon class="core-top" points="152.00,348.75 173.00,360.75 152.00,373.00 131.00,360.75"/>
+    <polygon class="core-left" points="131.00,360.75 152.00,373.00 152.00,394.50 131.00,382.25"/>
+    <polygon class="core-right" points="173.00,360.75 152.00,373.00 152.00,394.50 173.00,382.25"/>
+    <polygon class="core-top" points="131.00,336.50 152.00,348.75 131.00,360.75 110.00,348.75"/>
+    <polygon class="core-left" points="110.00,348.75 131.00,360.75 131.00,382.25 110.00,370.25"/>
+    <polygon class="core-right" points="152.00,348.75 131.00,360.75 131.00,382.25 152.00,370.25"/>
+    <polygon class="core-top" points="131.00,312.25 152.00,324.50 131.00,336.50 110.00,324.50"/>
+    <polygon class="core-left" points="110.00,324.50 131.00,336.50 131.00,358.00 110.00,346.00"/>
+    <polygon class="core-right" points="152.00,324.50 131.00,336.50 131.00,358.00 152.00,346.00"/>
+    <polygon class="core-top" points="131.00,288.00 152.00,300.25 131.00,312.25 110.00,300.25"/>
+    <polygon class="core-left" points="110.00,300.25 131.00,312.25 131.00,333.75 110.00,321.75"/>
+    <polygon class="core-right" points="152.00,300.25 131.00,312.25 131.00,333.75 152.00,321.75"/>
+    <polygon class="core-top" points="152.00,276.00 173.00,288.00 152.00,300.25 131.00,288.00"/>
+    <polygon class="core-left" points="131.00,288.00 152.00,300.25 152.00,321.75 131.00,309.50"/>
+    <polygon class="core-right" points="173.00,288.00 152.00,300.25 152.00,321.75 173.00,309.50"/>
+    <polygon class="core-top" points="173.00,263.75 194.00,276.00 173.00,288.00 152.00,276.00"/>
+    <polygon class="core-left" points="152.00,276.00 173.00,288.00 173.00,309.50 152.00,297.50"/>
+    <polygon class="core-right" points="194.00,276.00 173.00,288.00 173.00,309.50 194.00,297.50"/>
+    <polygon class="core-top" points="194.00,251.75 215.00,263.75 194.00,276.00 173.00,263.75"/>
+    <polygon class="core-left" points="173.00,263.75 194.00,276.00 194.00,297.50 173.00,285.25"/>
+    <polygon class="core-right" points="215.00,263.75 194.00,276.00 194.00,297.50 215.00,285.25"/>
+    <polygon class="core-top" points="236.00,251.75 257.00,263.75 236.00,276.00 215.00,263.75"/>
+    <polygon class="core-left" points="215.00,263.75 236.00,276.00 236.00,297.50 215.00,285.25"/>
+    <polygon class="core-right" points="257.00,263.75 236.00,276.00 236.00,297.50 257.00,285.25"/>
+    <polygon class="core-top" points="257.00,263.75 278.00,276.00 257.00,288.00 236.00,276.00"/>
+    <polygon class="core-left" points="236.00,276.00 257.00,288.00 257.00,309.50 236.00,297.50"/>
+    <polygon class="core-right" points="278.00,276.00 257.00,288.00 257.00,309.50 278.00,297.50"/>
+    <polygon class="core-top" points="278.00,276.00 299.00,288.00 278.00,300.25 257.00,288.00"/>
+    <polygon class="core-left" points="257.00,288.00 278.00,300.25 278.00,321.75 257.00,309.50"/>
+    <polygon class="core-right" points="299.00,288.00 278.00,300.25 278.00,321.75 299.00,309.50"/>
+  </g>
+  <g>
+    <polygon class="badge-top" points="227.50,385.25 274.75,412.50 227.50,439.75 180.25,412.50"/>
+    <polygon class="badge-left" points="180.25,412.50 227.50,439.75 227.50,453.75 180.25,426.25"/>
+    <polygon class="badge-right" points="274.75,412.50 227.50,439.75 227.50,453.75 274.75,426.25"/>
+  </g>
+  <g><path class="glyph" d="M 11.85 3.25 C 10.25 1.0 8.1 0 5.6 0 C 2.05 0 0 2.55 0 9 C 0 15.45 2.05 18 5.6 18 C 8.1 18 10.25 17 11.85 14.75 L 9.4 12.95 C 8.35 14.45 7.25 15.15 5.65 15.15 C 3.55 15.15 2.8 13.4 2.8 9 C 2.8 4.6 3.55 2.85 5.65 2.85 C 7.25 2.85 8.35 3.55 9.4 5.05 Z" transform="translate(384,348) scale(6.25)"/>
+  </g>
+</svg>

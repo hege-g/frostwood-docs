@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="sys16-title sys16-desc">
+  <title id="sys16-title">Frostwood Rendszer mesterjavítás v3 — Installer doboz ikon</title>
+  <desc id="sys16-desc">Sötét Frostwood izometrikus ikon: nyitott dobozból kiemelkedő elemek jelzik az Installer specifikációt.</desc>
+  <defs>
+    <linearGradient id="sys16-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1C1C1C"/><stop offset="100%" stop-color="#243140"/></linearGradient>
+    <linearGradient id="sys16-top" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#2A2A2A"/><stop offset="100%" stop-color="#32485C"/></linearGradient>
+    <linearGradient id="sys16-left" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#384C5F"/><stop offset="100%" stop-color="#2E4050"/></linearGradient>
+    <linearGradient id="sys16-right" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#4A6176"/><stop offset="100%" stop-color="#34495B"/></linearGradient>
+    <linearGradient id="sys16-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/><stop offset="100%" stop-color="#DCEBFA" stop-opacity="0.90"/></linearGradient>
+    <linearGradient id="sys16-metal" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F4F7FA"/><stop offset="100%" stop-color="#8D99A6"/></linearGradient>
+    <linearGradient id="sys16-blue" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#BFD8F2"/><stop offset="100%" stop-color="#5A7FA6"/></linearGradient>
+    <filter id="sys16-baseShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.24"/></filter>
+    <filter id="sys16-objectShadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000000" flood-opacity="0.24"/></filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="36" fill="url(#sys16-bg)"/>
+  <g aria-hidden="true" opacity="0.13" fill="none" stroke="#D7E0E8" stroke-width="2">
+    <path d="M90 142 164 100 238 142 164 184Z"/>
+    <path d="M164 184v70M90 142v70l74 42 74-42v-70"/>
+    <path d="M292 100h94M292 124h68M292 148h86"/>
+  </g>
+  <ellipse cx="258" cy="394" rx="132" ry="32" fill="#000000" opacity="0.20" aria-hidden="true"/>
+  <g filter="url(#sys16-baseShadow)">
+    <polygon points="110,314 258,250 406,314 258,380" fill="url(#sys16-top)" stroke="#D7E0E8" stroke-width="3.5"/>
+    <polygon points="110,314 110,362 258,428 258,380" fill="url(#sys16-left)" stroke="#D7E0E8" stroke-width="3.5"/>
+    <polygon points="258,380 258,428 406,362 406,314" fill="url(#sys16-right)" stroke="#D7E0E8" stroke-width="3.5"/>
+  </g>
+
+  <g filter="url(#sys16-objectShadow)">
+    <polygon points="160,224 258,178 356,224 258,270" fill="#D7E0E8" stroke="#D7E0E8" stroke-width="5"/>
+    <polygon points="160,224 160,294 258,344 258,270" fill="#384C5F" stroke="#D7E0E8" stroke-width="5"/>
+    <polygon points="258,270 258,344 356,294 356,224" fill="#4A6176" stroke="#D7E0E8" stroke-width="5"/>
+    <path d="M202 198l-44 26 46 22 54-24zM314 198l44 26-46 22-54-24z" fill="#5A7FA6" stroke="#D7E0E8" stroke-width="4"/>
+    <rect x="234" y="132" width="48" height="70" rx="8" fill="#E8A86A" stroke="#D7E0E8" stroke-width="4"/>
+    <rect x="292" y="152" width="42" height="58" rx="8" fill="#7A8F82" stroke="#D7E0E8" stroke-width="4"/>
+  </g>
+</svg>

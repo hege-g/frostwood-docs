@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Frostwood Console
+   Kódrészletek, telepítő- és eltávolító blokkok
+   v1.1 (91/92 rendszerhez igazítva)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Alap kódblokkok
+   -------------------------------------------------------------------------- */
+
+.md-typeset pre {
+  border-radius: .75rem;
+  padding: 0;
+  overflow: auto;
+}
+
+.md-typeset pre > code {
+  display: block;
+  padding: 1rem 1.1rem;
+  line-height: 1.55;
+  font-size: .92rem;
+}
+
+/* --------------------------------------------------------------------------
+   Frostwood árnyékrendszer
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="default"] .md-typeset pre {
+  box-shadow:
+    0 2px 6px rgba(0,0,0,.04),
+    0 8px 18px rgba(0,0,0,.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre {
+  box-shadow:
+    0 2px 8px rgba(0,0,0,.18),
+    0 8px 20px rgba(0,0,0,.14);
+}
+
+/* --------------------------------------------------------------------------
+   Highlight blokkok
+   -------------------------------------------------------------------------- */
+
+.md-typeset .highlight {
+  border-radius: .75rem;
+  overflow: hidden;
+}
+
+.md-typeset .highlight table {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Frostwood konzolblokkok
+   -------------------------------------------------------------------------- */
+
+.fw-console-install,
+.fw-console-remove {
+  border-radius: .75rem;
+  overflow: hidden;
+  margin: 1rem 0 1.2rem;
+}
+
+.fw-console-install pre,
+.fw-console-remove pre {
+  margin: 0;
+}
+
+/* Telepítés */
+
+.fw-console-install {
+  border: 1px solid rgba(74,109,147,.45);
+}
+
+/* Eltávolítás */
+
+.fw-console-remove {
+  border: 1px solid rgba(155,108,53,.55);
+}
+
+/* --------------------------------------------------------------------------
+   Címsor
+   -------------------------------------------------------------------------- */
+
+.fw-code-caption {
+  font-size: .84rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  padding: .65rem .9rem;
+}
+
+[data-md-color-scheme="default"] .fw-code-caption {
+  background: #F5F5F5;
+  color: #333333;
+}
+
+[data-md-color-scheme="slate"] .fw-code-caption {
+  background: #252525;
+  color: #E0E0E0;
+}
+
+/* --------------------------------------------------------------------------
+   Telepítés / eltávolítás elválasztó
+   -------------------------------------------------------------------------- */
+
+.fw-console-install .fw-code-caption {
+  border-bottom: 1px solid rgba(74,109,147,.30);
+}
+
+.fw-console-remove .fw-code-caption {
+  border-bottom: 1px solid rgba(155,108,53,.35);
+}
+
+/* --------------------------------------------------------------------------
+   WCAG / Audit mód
+   -------------------------------------------------------------------------- */
+
+body.wcag-mode .md-typeset pre,
+body.audit-mode .md-typeset pre,
+body.wcag-mode .highlight,
+body.audit-mode .highlight {
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}

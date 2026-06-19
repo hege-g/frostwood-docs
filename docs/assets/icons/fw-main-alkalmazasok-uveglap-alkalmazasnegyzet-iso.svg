@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="main-apps-title main-apps-desc">
+  <title id="main-apps-title">Frostwood fő blokk — Alkalmazások app grid ikon</title>
+  <desc id="main-apps-desc">Lebegő üveglapon elhelyezett alkalmazásrács navigációs ikon az Alkalmazások kategóriához.</desc>
+  <defs>
+    <linearGradient id="main-apps-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <linearGradient id="main-apps-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F9FB"/>
+      <stop offset="100%" stop-color="#D8E2EC"/>
+    </linearGradient>
+    <linearGradient id="main-apps-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5DEE8"/>
+      <stop offset="100%" stop-color="#C6D1DB"/>
+    </linearGradient>
+    <linearGradient id="main-apps-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C6D1DB"/>
+      <stop offset="100%" stop-color="#B2C0CD"/>
+    </linearGradient>
+    <linearGradient id="main-apps-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DCEBFA" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="main-apps-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BFD8F2"/>
+      <stop offset="100%" stop-color="#5A7FA6"/>
+    </linearGradient>
+    <linearGradient id="main-apps-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F7FA"/>
+      <stop offset="100%" stop-color="#8D99A6"/>
+    </linearGradient>
+    <filter id="main-apps-baseShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="main-apps-objectShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="36" fill="url(#main-apps-bg)"/>
+  <g aria-hidden="true" opacity="0.13" fill="none" stroke="#8D99A6" stroke-width="2">
+    <path d="M90 142 164 100 238 142 164 184Z"/>
+    <path d="M164 184v70M90 142v70l74 42 74-42v-70"/>
+    <path d="M292 100h94M292 124h68M292 148h86"/>
+  </g>
+  <ellipse cx="258" cy="394" rx="132" ry="32" fill="#8D99A6" opacity="0.18" aria-hidden="true"/>
+  <g filter="url(#main-apps-baseShadow)">
+    <polygon points="110,314 258,250 406,314 258,380" fill="url(#main-apps-top)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="110,314 110,362 258,428 258,380" fill="url(#main-apps-left)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="258,380 258,428 406,362 406,314" fill="url(#main-apps-right)" stroke="#415A70" stroke-width="3.5"/>
+  </g>
+
+  <g filter="url(#main-apps-objectShadow)">
+    <polygon points="138,166 326,126 388,232 200,274" fill="url(#main-apps-glass)" stroke="#415A70" stroke-width="5"/>
+    <polygon points="200,274 388,232 388,266 200,310" fill="#B2C0CD" stroke="#415A70" stroke-width="4"/>
+    <polygon points="138,166 200,274 200,310 138,200" fill="#C6D1DB" stroke="#415A70" stroke-width="4"/>
+    <polygon points="178,188 218,179 232,205 192,214" fill="#5A7FA6" stroke="#415A70" stroke-width="4"/>
+    <polygon points="236,176 276,167 290,193 250,202" fill="#E8A86A" stroke="#415A70" stroke-width="4"/>
+    <polygon points="294,164 334,155 348,181 308,190" fill="#7A8F82" stroke="#415A70" stroke-width="4"/>
+    <polygon points="194,232 234,223 248,249 208,258" fill="#B88A5A" stroke="#415A70" stroke-width="4"/>
+    <polygon points="252,220 292,211 306,237 266,246" fill="#96BADA" stroke="#415A70" stroke-width="4"/>
+    <polygon points="310,208 350,199 364,225 324,234" fill="#D8E2EC" stroke="#415A70" stroke-width="4"/>
+  </g>
+</svg>

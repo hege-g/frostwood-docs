@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<title id="title">Frostwood active logo</title>
+<desc id="desc">Frostwood_Logo_v1: Izometrikus fagyos-fa kocka, narancs fókuszéllel.</desc>
+<rect width="512" height="512" fill="none"/>
+<defs>
+  <radialGradient id="frostGrad" cx="50%" cy="40%" r="60%">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#F0F0F0"/>
+  </radialGradient>
+  <pattern id="woodGrain" width="8" height="8" patternUnits="userSpaceOnUse">
+    <path d="M0 0 C2 4,6 4,8 0" stroke="#000" stroke-opacity="0.05" fill="none"/>
+  </pattern>
+</defs>
+<polygon points="256,120 360,180 256,240 152,180" fill="url(#frostGrad)"/>
+<polygon points="152,180 256,240 256,360 152,300" fill="#BFBFBF"/>
+<polygon points="152,180 256,240 256,360 152,300" fill="url(#woodGrain)"/>
+<polygon points="360,180 256,240 256,360 360,300" fill="#D6D6D6"/>
+<polygon points="360,180 256,240 256,360 360,300" fill="url(#woodGrain)"/>
+<polyline points="256,120 360,180 256,240" fill="none" stroke="#E67E22" stroke-width="2"/>
+</svg>

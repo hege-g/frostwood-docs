@@ -1,0 +1,202 @@
+:root {
+  --fw-bg-light: #FBFBFB;
+  --fw-bg-light-alt: #F5F5F5;
+  --fw-bg-dark: #1C1C1C;
+  --fw-bg-dark-panel: #252525;
+  --fw-bg-dark-raised: #2A2A2A;
+
+  --fw-text-dark: #E0E0E0;
+  --fw-text-dark-muted: #A0A0A0;
+  --fw-text-light-muted: #787878;
+
+  --fw-hover-light: #F1F3F6;
+  --fw-hover-dark: #2B2F36;
+
+  --fw-info: #4A6D93;
+  --fw-success: #5E7468;
+  --fw-warning: #9B6C35;
+  --fw-accent: #B05A2A;
+
+  --fw-watermark-size: 168px;
+  --fw-watermark-opacity-light: 0.22;
+  --fw-watermark-opacity-dark: 0.16;
+  --fw-watermark-opacity-wcag: 0.10;
+
+  --fw-shadow-light: 0 8px 24px rgba(0, 0, 0, .06);
+  --fw-shadow-dark: 0 10px 28px rgba(0, 0, 0, .22);
+}
+
+body {
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: var(--fw-watermark-size);
+  height: var(--fw-watermark-size);
+  background: url("../assets/brand/logo_30_watermark.svg") center / contain no-repeat;
+  opacity: var(--fw-watermark-opacity-light);
+  pointer-events: none;
+  z-index: 0;
+  user-select: none;
+}
+
+[data-md-color-scheme="slate"] body::after {
+  opacity: var(--fw-watermark-opacity-dark);
+}
+
+body.wcag-mode::after,
+body.audit-mode::after {
+  opacity: var(--fw-watermark-opacity-wcag);
+}
+
+.md-content__inner {
+  max-width: 72rem;
+}
+
+.md-typeset {
+  padding: .35rem .2rem;
+  border-radius: 1rem;
+}
+
+[data-md-color-scheme="default"] .md-typeset {
+  box-shadow: var(--fw-shadow-light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset {
+  box-shadow: var(--fw-shadow-dark);
+}
+
+body.wcag-mode .md-typeset,
+body.audit-mode .md-typeset,
+body.wcag-mode .md-typeset pre,
+body.audit-mode .md-typeset pre {
+  box-shadow: none !important;
+}
+
+.md-typeset img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto 1.1rem;
+  border-radius: 1rem;
+}
+
+.md-typeset .mermaid {
+  padding: 1rem;
+  border-radius: 1rem;
+  overflow: auto;
+}
+
+[data-md-color-scheme="default"] .md-typeset .mermaid {
+  background: rgba(0, 0, 0, .018);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .mermaid {
+  background: rgba(255, 255, 255, .025);
+}
+
+body.wcag-mode .md-typeset .mermaid,
+body.audit-mode .md-typeset .mermaid {
+  background: transparent !important;
+}
+
+.md-typeset table:not([class]) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: .9rem;
+  overflow: hidden;
+}
+
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  padding: .8rem .9rem;
+  vertical-align: top;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) thead tr {
+  background: var(--fw-bg-light-alt);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) thead tr {
+  background: var(--fw-bg-dark-panel);
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, .015);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, .02);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--fw-hover-light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: var(--fw-hover-dark);
+}
+
+.md-header,
+.md-tabs {
+  backdrop-filter: blur(4px);
+}
+
+[data-md-color-scheme="default"] .md-header,
+[data-md-color-scheme="default"] .md-tabs {
+  background-color: rgba(251, 251, 251, .92);
+}
+
+[data-md-color-scheme="slate"] .md-header,
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: rgba(28, 28, 28, .92);
+}
+
+body.wcag-mode .md-header,
+body.wcag-mode .md-tabs,
+body.audit-mode .md-header,
+body.audit-mode .md-tabs {
+  backdrop-filter: none;
+}
+
+.md-sidebar__scrollwrap {
+  padding-top: .25rem;
+  padding-bottom: .5rem;
+}
+
+.md-typeset :focus-visible {
+  outline: 2px solid var(--fw-accent);
+  outline-offset: 2px;
+}
+
+/* Mobil: Material reszponzív layout érintetlen.
+   Csak Frostwood saját vizuális rétegek halkítása. */
+@media (max-width: 960px) {
+  body::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .md-typeset {
+    box-shadow: none !important;
+    border-radius: 0;
+  }
+
+  .md-typeset img,
+  .md-typeset .mermaid,
+  .md-typeset table:not([class]) {
+    border-radius: .5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-header,
+  .md-tabs {
+    backdrop-filter: none;
+  }
+}

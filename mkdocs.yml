@@ -1,0 +1,187 @@
+site_name: Frostwood Dokumentáció
+site_description: Frostwood rendszer dokumentáció
+site_url: "https://hege-g.github.io/frostwood-docs/"
+repo_url: "https://github.com/hege-g/frostwood-docs"
+repo_name: "hege-g/frostwood-docs"
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: hu
+  language_extensions:
+    hu:
+      search.reset: "Keresés törlése"
+      search.share: "Keresési link másolása"
+
+  features:
+    # --- 1. Navigáció és Menürendszer ---
+    - navigation.tabs          # Felső vízszintes menüfülek aktiválása
+    - navigation.tabs.sticky   # A felső menüfülek fixen fent maradnak görgetéskor
+    - navigation.sections      # Az oldalsó menücsoportok vizuális szekciókra bontása
+    - navigation.top           # "Vissza a tetejére" lebegő gomb megjelenítése
+    - navigation.tracking      # Az oldalsó menü automatikusan követi a görgetést
+    - navigation.footer        # Előző/Következő oldal léptető sáv a lap alján
+
+    # --- 2. Intelligens Keresőrendszer ---
+    - search.suggest           # Gépelés közbeni keresési javaslatok
+    - search.highlight         # A talált szavak sárga kiemelése a dokumentumban
+    - search.share             # Keresési kifejezést tartalmazó közvetlen link másolása
+
+    # --- 3. Tartalmi és Kódblokk funkciók ---
+    - content.code.copy        # Gyári másolás gomb a kódblokkok sarkában
+    - content.tooltips         # Modern buboréksúgók
+    - announce.dismiss         # A felső bejelentési sáv bezárásának engedélyezése
+
+    # --- 4. Tartalomjegyzék és Fejléc viselkedés ---
+    - toc.follow               # A jobb oldali tartalomjegyzék követi a görgetést
+    - toc.integrate            # Beolvasztja a tartalomjegyzéket az oldalsó menübe mobilon
+    - header.autohide          # Lefelé görgetéskor elrejti, felfelé görgetéskor mutatja a fő fejlécet
+
+  palette:
+    # --- VILÁGOS MÓD (Clean Paper) ---
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/cube
+        name: Váltás sötét módra
+
+    # --- SÖTÉT MÓD (Deep Obsidian) ---
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/cube-scan
+        name: Váltás rendszer szerinti módra
+
+    # --- RENDSZER MÓD (Automatikus) ---
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/cube-outline
+        name: Váltás világos módra
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/frostwood-visual-layer.css
+  - stylesheets/frostwood-extra-icons.css
+  - stylesheets/frostwood-components.css
+  - stylesheets/frostwood-console.css
+  - stylesheets/frostwood-embed.css
+  - stylesheets/frostwood-admonitions.css
+  - stylesheets/frostwood-wcag-toggle.css
+  - stylesheets/frostwood-architecture-fixes.css
+
+extra_javascript:
+  - javascripts/frostwood-toggles.js
+  - javascripts/frostwood-copy-region-fix.js
+
+extra:
+  generator: false
+
+markdown_extensions:
+  # 1. Alapvető MkDocs kiterjesztések
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: false
+
+  # 2. Összetett strukturális elemek
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # 3. Kódkiemelés és kódblokk menedzsment
+  - pymdownx.highlight:
+      anchor_linenums: false
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+  # 4. Felületi elemek és vizuális kiegészítők
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        attributes:
+          aria-hidden: "true"
+          focusable: "false"
+
+nav:
+  - Kezdőlap: index.md
+
+  - Gyors áttekintés:
+      - Rendszerkártya: rendszerkartya.md
+      - Rendszerdiagram: rendszerdiagram.md
+      - Letöltések: letoltesek.md
+
+  - Dokumentációs blokkok:
+      - Alapok blokk: alapok-blokk.md
+      - Rendszer blokk: rendszer-blokk.md
+      - Alkalmazások blokk: alkalmazasok-blokk.md
+      - Referenciák blokk: referenciak-blokk.md
+
+  - Alapok:
+      - Áttekintés: 01-attekintes.md
+      - Rendszerleírás: 02-rendszerleiras.md
+      - Szín rendszer: 03-szin-rendszer.md
+      - WCAG fókusz: 04-wcag-fokusz-reteg.md
+      - Jelzésmechanika: 05-jelzesmechanika.md
+      - Akadálymentességi alapelvek: 06-rendszerszintu-akadalymentessegi-alapelvek.md
+      - Ikonrendszer / JAWS vezérlés: 07-ikonrendszer-es-jaws-vezerles.md
+      - Rendszer ikonok: 08-rendszer-ikonok.md
+      - Otthon / Munka ikonok: 09-otthon-munka-ikonok.md
+
+  - Rendszer:
+      - Munka asztal: 11-munka-asztal-modell.md
+      - AutoDarkMode technikai működés: 12-autodarkmode-technikai-mukodesi-integracio.md
+      - SoftLock rendszer: 13-softlock-rendszer.md
+      - Travel mód (opcionális): 14-travel-mod-opcionalis-modul.md
+      - Záróképernyő / Képernyőkimélő: 15-zarokepernyo-es-kepernyokimelo.md
+      - Installer specifikáció: 16-installer-specifikacio.md
+      - Eltávolítás / Visszaállítás: 17-eltavolitas-visszaallitas.md
+      - Akadálymentesített Batch Keretrendszer: 18-akadalymentesitett-batch-keretrendszer.md
+      - Rendszer blokk architektúra (DEV): 19-rendszer-blokk-architektura-terkep--dev-audit.md
+
+  - Alkalmazások:
+      - Windows 11 Fájlkezelő: 21-windows-11-fajlkezelo.md
+      - Total Commander: 22-total-commander.md
+      - Microsoft Edge: 23-microsoft-edge.md
+      - Google Chrome: 24-google-chrome.md
+      - Mozilla Firefox: 25-mozilla-firefox.md
+      - Microsoft Office: 26-microsoft-office.md
+      - Meta Chat: 27-meta-chat.md
+      - Zoom: 28-zoom.md
+      - Windows Narrátor: 29-windows-narrator.md
+      - JAWS for Windows: 30-jaws-for-windows.md
+      - Insta360 Studio: 31-insta360-studio.md
+      - ChatGPT: 32-chatgpt.md
+      - Gemini: 33-gemini.md
+      - Windows Lomtár: 34-windows-lomtar.md
+      - Alkalmazások blokk architektúra (DEV): 89-alkalmazasok-blokk-architektura--dev.md
+
+  - Referenciák:
+      - Színkódok: 91-szinkodok.md
+      - Jelzés színek / viselkedés: 92-jelzes-szinek.md
+      - Útiterv: 93-utiterv.md
+      - Rendszer áttekintés: 94-rendszer-attekintes.md
+      - Változásnapló: 95-valtozasnaplo.md
+      - Telepítőcsomag struktúra: 96-telepitocsomag-struktura.md
+      - Ikonarchitektúra: 97-frostwood-ikonarchitektura-guide.md
+      - Referenciák blokk architektúra (DEV): 99-referenciak-blokk-architektura--dev.md
+
+  - Licenc: license.md

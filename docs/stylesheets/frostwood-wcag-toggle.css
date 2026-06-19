@@ -1,0 +1,142 @@
+/* ==========================================================================
+   Frostwood WCAG Toggle
+   Külön fejlécgomb a Material témaváltó mellett
+   v1.1 (91/92 rendszerhez igazítva)
+   ========================================================================== */
+
+.fw-wcag-toggle {
+  min-width: 3.2rem;
+  width: auto;
+  height: 2.2rem;
+
+  margin-left: 0.35rem;
+  padding: 0 0.7rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    background-color 140ms ease,
+    border-color 140ms ease,
+    box-shadow 140ms ease,
+    color 140ms ease,
+    transform 100ms ease;
+}
+
+/* --------------------------------------------------------------------------
+   Light
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="default"] .fw-wcag-toggle {
+  background: rgba(0, 0, 0, 0.04);
+  color: #333333;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.35),
+    0 1px 2px rgba(0,0,0,.08);
+}
+
+/* --------------------------------------------------------------------------
+   Dark
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="slate"] .fw-wcag-toggle {
+  background: rgba(255, 255, 255, 0.05);
+  color: #E0E0E0;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.03),
+    0 1px 2px rgba(0,0,0,.25);
+}
+
+/* --------------------------------------------------------------------------
+   Hover
+   -------------------------------------------------------------------------- */
+
+[data-md-color-scheme="default"] .fw-wcag-toggle:hover {
+  background: #F1F3F6;
+}
+
+[data-md-color-scheme="slate"] .fw-wcag-toggle:hover {
+  background: #2B2F36;
+}
+
+/* --------------------------------------------------------------------------
+   Aktív vizuális állapot
+   -------------------------------------------------------------------------- */
+
+.fw-wcag-toggle.is-active {
+  border-color: #B05A2A;
+
+  box-shadow:
+    0 0 0 1px rgba(176,90,42,.35) inset;
+}
+
+/* --------------------------------------------------------------------------
+   Aktív WCAG mód
+   -------------------------------------------------------------------------- */
+
+body.wcag-mode .fw-wcag-toggle.is-active {
+  background: rgba(176,90,42,.12);
+}
+
+/* --------------------------------------------------------------------------
+   Benyomódás érzet
+   -------------------------------------------------------------------------- */
+
+.fw-wcag-toggle:active {
+  transform: translateY(1px);
+}
+
+/* --------------------------------------------------------------------------
+   Fókusz
+   -------------------------------------------------------------------------- */
+
+.fw-wcag-toggle:focus-visible {
+  outline: 2px solid #B05A2A;
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------------------
+   Tiltott állapot
+   -------------------------------------------------------------------------- */
+
+.fw-wcag-toggle:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* --------------------------------------------------------------------------
+   WCAG mód
+   -------------------------------------------------------------------------- */
+
+body.wcag-mode .fw-wcag-toggle {
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   Mobil
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 960px) {
+  .fw-wcag-toggle {
+    min-width: 3rem;
+    height: 2.05rem;
+
+    padding: 0 0.6rem;
+
+    font-size: 0.68rem;
+  }
+}

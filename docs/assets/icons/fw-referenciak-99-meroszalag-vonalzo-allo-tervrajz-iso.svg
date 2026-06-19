@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="ref99-title ref99-desc">
+  <title id="ref99-title">Frostwood Referenciák mesterjavítás — Audit and Measure ikon</title>
+  <desc id="ref99-desc">Mérőszalag, vonalzó és tervrajz-henger ikon a Referenciák blokk architektúra DEV modulhoz.</desc>
+  <defs>
+    <linearGradient id="ref99-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <linearGradient id="ref99-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F9FB"/>
+      <stop offset="100%" stop-color="#D8E2EC"/>
+    </linearGradient>
+    <linearGradient id="ref99-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5DEE8"/>
+      <stop offset="100%" stop-color="#C6D1DB"/>
+    </linearGradient>
+    <linearGradient id="ref99-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C6D1DB"/>
+      <stop offset="100%" stop-color="#B2C0CD"/>
+    </linearGradient>
+    <linearGradient id="ref99-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DCEBFA" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="ref99-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BFD8F2"/>
+      <stop offset="100%" stop-color="#5A7FA6"/>
+    </linearGradient>
+    <linearGradient id="ref99-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F7FA"/>
+      <stop offset="100%" stop-color="#8D99A6"/>
+    </linearGradient>
+    <filter id="ref99-baseShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="ref99-objectShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="36" fill="url(#ref99-bg)"/>
+  <g aria-hidden="true" opacity="0.13" fill="none" stroke="#8D99A6" stroke-width="2">
+    <path d="M90 142 164 100 238 142 164 184Z"/>
+    <path d="M164 184v70M90 142v70l74 42 74-42v-70"/>
+    <path d="M292 100h94M292 124h68M292 148h86"/>
+  </g>
+  <ellipse cx="258" cy="394" rx="132" ry="32" fill="#8D99A6" opacity="0.18" aria-hidden="true"/>
+  <g filter="url(#ref99-baseShadow)">
+    <polygon points="110,314 258,250 406,314 258,380" fill="url(#ref99-top)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="110,314 110,362 258,428 258,380" fill="url(#ref99-left)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="258,380 258,428 406,362 406,314" fill="url(#ref99-right)" stroke="#415A70" stroke-width="3.5"/>
+  </g>
+
+  <g filter="url(#ref99-objectShadow)">
+    <rect x="308" y="144" width="52" height="150" rx="8" fill="#EDF7FF" stroke="#415A70" stroke-width="4"/>
+    <ellipse cx="334" cy="144" rx="26" ry="10" fill="#FFFFFF" stroke="#415A70" stroke-width="4"/>
+    <path d="M322 176h24M322 194h24M322 212h24M322 230h24M322 248h18" stroke="#5A7FA6" stroke-width="3" stroke-linecap="round"/>
+    <g transform="rotate(-18 282 250)">
+      <rect x="204" y="238" width="170" height="34" rx="7" fill="#FFFFFF" stroke="#415A70" stroke-width="4"/>
+      <path d="M224 238v14M246 238v22M268 238v14M290 238v22M312 238v14M334 238v22M356 238v14" stroke="#415A70" stroke-width="3"/>
+    </g>
+    <path d="M158 246c0-38 32-68 72-68h30c42 0 74 28 74 64s-30 66-70 66h-40c-40 0-66-24-66-62z" fill="#F7F9FB" stroke="#415A70" stroke-width="5"/>
+    <path d="M190 248c0-22 18-40 44-40h24c26 0 44 14 44 36s-18 36-44 36h-24c-26 0-44-12-44-32z" fill="#EAF1F8" stroke="#415A70" stroke-width="4"/>
+    <rect x="270" y="224" width="30" height="28" rx="6" fill="#E8A86A" stroke="#415A70" stroke-width="4"/>
+    <path d="M310 240h50c12 0 20 8 22 20l8 50c2 10-7 17-16 12l-48-24c-10-5-16-15-16-26z" fill="#FFFFFF" stroke="#415A70" stroke-width="4"/>
+  </g>
+</svg>

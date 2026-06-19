@@ -1,0 +1,244 @@
+/**
+ * @file frostwood-architecture-fixes.css
+ * @description Architektúra-szintű Frostwood CSS javítások és ütközéskezelés.
+ * @author Frostwood Core Architecture
+ * @dependency Ezt a fájlt az extra_css lista LEGUTOLSÓ elemeként kell betölteni.
+ */
+
+/* ==========================================================================
+   1. WCAG / audit mód: fejléc és tab háttér stabilizálása
+   ========================================================================== */
+
+body.wcag-mode .md-header,
+body.wcag-mode .md-tabs,
+body.audit-mode .md-header,
+body.audit-mode .md-tabs {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+[data-md-color-scheme="slate"] body.wcag-mode .md-header,
+[data-md-color-scheme="slate"] body.wcag-mode .md-tabs,
+[data-md-color-scheme="slate"] body.audit-mode .md-header,
+[data-md-color-scheme="slate"] body.audit-mode .md-tabs,
+body.wcag-mode[data-md-color-scheme="slate"] .md-header,
+body.wcag-mode[data-md-color-scheme="slate"] .md-tabs,
+body.audit-mode[data-md-color-scheme="slate"] .md-header,
+body.audit-mode[data-md-color-scheme="slate"] .md-tabs {
+  background-color: var(--fw-bg-dark, #1C1C1C) !important;
+}
+
+[data-md-color-scheme="default"] body.wcag-mode .md-header,
+[data-md-color-scheme="default"] body.wcag-mode .md-tabs,
+[data-md-color-scheme="default"] body.audit-mode .md-header,
+[data-md-color-scheme="default"] body.audit-mode .md-tabs,
+body.wcag-mode[data-md-color-scheme="default"] .md-header,
+body.wcag-mode[data-md-color-scheme="default"] .md-tabs,
+body.audit-mode[data-md-color-scheme="default"] .md-header,
+body.audit-mode[data-md-color-scheme="default"] .md-tabs {
+  background-color: var(--fw-bg-light, #FBFBFB) !important;
+}
+
+/* ==========================================================================
+   2. Fókuszkeret levágódás elleni puffer kártyarácsoknál
+   ========================================================================== */
+
+.md-typeset .grid.cards {
+  padding: 4px !important;
+  margin-bottom: 1.2rem;
+}
+
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  overflow: visible !important;
+}
+
+/* ==========================================================================
+   3. Kódblokkok kijelölhetősége és sorszámok védelme
+   ========================================================================== */
+
+.md-typeset pre code,
+.md-typeset pre code * {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -ms-user-select: text !important;
+}
+
+.md-typeset .md-code__links,
+.md-typeset .md-code__number,
+.md-typeset .linenos,
+.md-typeset .linenos * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* ==========================================================================
+   4. WCAG / audit mód: kártyák tisztítása
+   ========================================================================== */
+
+body.wcag-mode .md-typeset .frostwood-numbered-card > ul > li,
+body.wcag-mode .md-typeset .frostwood-section-cards > ul > li,
+body.wcag-mode .md-typeset .frostwood-header-cards > ul > li,
+body.wcag-mode .md-typeset .frostwood-toc-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-numbered-card > ul > li,
+body.audit-mode .md-typeset .frostwood-section-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-header-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-toc-cards > ul > li {
+  background-color: transparent !important;
+  border: 2px solid currentColor !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* ==========================================================================
+   5. Z-index hierarchia rögzítése
+   ========================================================================== */
+
+.md-header {
+  z-index: 10 !important;
+}
+
+.md-tabs {
+  z-index: 9 !important;
+}
+
+.md-sidebar,
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  z-index: 5 !important;
+}
+
+.md-main__inner,
+.md-content,
+.md-content__inner,
+.md-typeset .mermaid,
+.md-typeset .frostwood-embed-container {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* ==========================================================================
+   6. Frostwood kereső: nincs CSS alapú gombrejtés
+   ========================================================================== */
+
+/*
+ * A Material MkDocs kereső reset/share gombjait nem rejtjük CSS-ből.
+ * A korábbi display:none és sibling-selector alapú keresőszabályok
+ * fókusz- és képernyőolvasós ütközést okozhattak.
+ *
+ * A kereső saját Material működése érintetlen marad.
+ */
+
+/* ==========================================================================
+   7. Breadcrumb / navigation.path döntés
+   ========================================================================== */
+
+/*
+ * A Material navigation.path vizuálisan a fejlécbe teszi a breadcrumb elemeit.
+ * Képernyőolvasóval ez túlbeszélő lehet, ezért Frostwoodban nem itt kezeljük
+ * az „Itt állsz:” jelzést. Ha a navigation.path mégis aktív marad, ezt a
+ * vizuális réteget elnémítjuk, hogy ne kerüljön be zajként a fejlécbe.
+ */
+
+.md-path,
+.md-nav__breadcrumbs,
+[data-md-component="navigation-path"] {
+  display: none !important;
+}
+
+.md-nav__breadcrumbs::before,
+.md-nav__breadcrumbs::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Általános Frostwood screen-reader-only segédosztály. */
+
+.fw-sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  clip-path: inset(50%) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* ==========================================================================
+   8. Material ikonok / pymdownx.emoji SVG baseline finomhangolás
+   ========================================================================== */
+
+.md-typeset .twemoji,
+.md-typeset .twemoji svg {
+  width: 1em;
+  height: 1em;
+}
+
+.md-typeset .twemoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: -0.125em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.md-typeset .twemoji svg {
+  display: block;
+}
+
+/* ==========================================================================
+   9. Frostwood dokumentációs billentyűnavigáció és fókuszstabilizálás
+   ========================================================================== */
+
+.md-top {
+  outline-offset: 3px;
+}
+
+.md-top:focus-visible,
+.md-footer__link:focus-visible,
+.md-typeset .fw-tooltip-ready:focus-visible {
+  outline: 2px solid var(--fw-accent, #B05A2A) !important;
+  outline-offset: 2px;
+}
+
+.md-footer__link {
+  position: relative;
+  z-index: 2;
+  outline-offset: 3px;
+}
+
+.fw-tooltip-ready {
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.fw-programmatic-focus-target {
+  outline: none;
+}
+
+/* --------------------------------------------------------------------------
+   Programatikus fókusz célpontok (skip link, keyboard navigation)
+   tabindex="-1" elemek ne kapjanak látható fókuszkeretet kattintás-simuláció után
+   -------------------------------------------------------------------------- */
+
+.fw-programmatic-focus-target:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ==========================================================================
+   10. Runtime maradványok semlegesítése
+   ========================================================================== */
+
+.md-search .fw-search-hidden {
+  display: inline-flex !important;
+  visibility: visible !important;
+}
+
+.md-header__title,
+.md-header__topic {
+  pointer-events: none;
+}

@@ -1,0 +1,332 @@
+:root {
+  --fw-bg-light: #FBFBFB;
+  --fw-card-light: #F5F5F5;
+  --fw-bg-dark: #1C1C1C;
+  --fw-card-dark: #2A2A2A;
+  --fw-accent: #B05A2A;
+  --fw-info: #4A6D93;
+  --fw-success: #5E7468;
+  --fw-warning: #9B6C35;
+  --fw-border-soft-light: rgba(0,0,0,0.10);
+  --fw-border-soft-dark: rgba(255,255,255,0.10);
+}
+
+/* --------------------------------------------------------------------------
+   Frostwood admonition / details alapréteg
+   -------------------------------------------------------------------------- */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 14px;
+  border-width: 0 0 0 4px;
+  border-left-color: var(--fw-info);
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.08),
+    0 10px 24px rgba(0,0,0,0.05);
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    border-color 140ms ease,
+    background-color 140ms ease;
+  margin-bottom: 1rem;
+  background-color: var(--fw-card-light);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details {
+  background-color: var(--fw-card-dark);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.20),
+    0 12px 32px rgba(0,0,0,0.24);
+}
+
+.md-typeset .admonition:focus-within,
+.md-typeset details[open] {
+  transform: translateY(-1px);
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.06),
+    0 16px 36px rgba(0,0,0,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition:focus-within,
+[data-md-color-scheme="slate"] .md-typeset details[open] {
+  box-shadow:
+    0 8px 24px rgba(0,0,0,0.24),
+    0 20px 48px rgba(0,0,0,0.32);
+}
+
+/* --------------------------------------------------------------------------
+   Frostwood admonition típusok
+   -------------------------------------------------------------------------- */
+
+.md-typeset .admonition.info,
+.md-typeset details.info,
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.todo,
+.md-typeset details.todo,
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract,
+.md-typeset .admonition.summary,
+.md-typeset details.summary,
+.md-typeset .admonition.tldr,
+.md-typeset details.tldr,
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.faq,
+.md-typeset details.faq,
+.md-typeset .admonition.quote,
+.md-typeset details.quote,
+.md-typeset .admonition.example,
+.md-typeset details.example,
+.md-typeset .admonition.snippet,
+.md-typeset details.snippet {
+  border-left-color: var(--fw-info);
+}
+
+.md-typeset .admonition.success,
+.md-typeset details.success,
+.md-typeset .admonition.done,
+.md-typeset details.done,
+.md-typeset .admonition.check,
+.md-typeset details.check {
+  border-left-color: var(--fw-success);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning,
+.md-typeset .admonition.caution,
+.md-typeset details.caution,
+.md-typeset .admonition.attention,
+.md-typeset details.attention,
+.md-typeset .admonition.failure,
+.md-typeset details.failure,
+.md-typeset .admonition.fail,
+.md-typeset details.fail,
+.md-typeset .admonition.missing,
+.md-typeset details.missing,
+.md-typeset .admonition.error,
+.md-typeset details.error,
+.md-typeset .admonition.danger,
+.md-typeset details.danger,
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-left-color: var(--fw-warning);
+}
+
+/* Finom háttérjelzés világos és sötét módban */
+
+[data-md-color-scheme="default"] .md-typeset .admonition.info,
+[data-md-color-scheme="default"] .md-typeset details.info,
+[data-md-color-scheme="default"] .md-typeset .admonition.note,
+[data-md-color-scheme="default"] .md-typeset details.note,
+[data-md-color-scheme="default"] .md-typeset .admonition.abstract,
+[data-md-color-scheme="default"] .md-typeset details.abstract,
+[data-md-color-scheme="default"] .md-typeset .admonition.tip,
+[data-md-color-scheme="default"] .md-typeset details.tip,
+[data-md-color-scheme="default"] .md-typeset .admonition.faq,
+[data-md-color-scheme="default"] .md-typeset details.faq,
+[data-md-color-scheme="default"] .md-typeset .admonition.quote,
+[data-md-color-scheme="default"] .md-typeset details.quote,
+[data-md-color-scheme="default"] .md-typeset .admonition.example,
+[data-md-color-scheme="default"] .md-typeset details.example,
+[data-md-color-scheme="default"] .md-typeset .admonition.snippet,
+[data-md-color-scheme="default"] .md-typeset details.snippet {
+  background-color: rgba(74,109,147,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.info,
+[data-md-color-scheme="slate"] .md-typeset details.info,
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note,
+[data-md-color-scheme="slate"] .md-typeset .admonition.abstract,
+[data-md-color-scheme="slate"] .md-typeset details.abstract,
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip,
+[data-md-color-scheme="slate"] .md-typeset .admonition.faq,
+[data-md-color-scheme="slate"] .md-typeset details.faq,
+[data-md-color-scheme="slate"] .md-typeset .admonition.quote,
+[data-md-color-scheme="slate"] .md-typeset details.quote,
+[data-md-color-scheme="slate"] .md-typeset .admonition.example,
+[data-md-color-scheme="slate"] .md-typeset details.example,
+[data-md-color-scheme="slate"] .md-typeset .admonition.snippet,
+[data-md-color-scheme="slate"] .md-typeset details.snippet {
+  background-color: rgba(74,109,147,0.12);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.success,
+[data-md-color-scheme="default"] .md-typeset details.success,
+[data-md-color-scheme="default"] .md-typeset .admonition.done,
+[data-md-color-scheme="default"] .md-typeset details.done,
+[data-md-color-scheme="default"] .md-typeset .admonition.check,
+[data-md-color-scheme="default"] .md-typeset details.check {
+  background-color: rgba(94,116,104,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.success,
+[data-md-color-scheme="slate"] .md-typeset details.success,
+[data-md-color-scheme="slate"] .md-typeset .admonition.done,
+[data-md-color-scheme="slate"] .md-typeset details.done,
+[data-md-color-scheme="slate"] .md-typeset .admonition.check,
+[data-md-color-scheme="slate"] .md-typeset details.check {
+  background-color: rgba(94,116,104,0.12);
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition.warning,
+[data-md-color-scheme="default"] .md-typeset details.warning,
+[data-md-color-scheme="default"] .md-typeset .admonition.caution,
+[data-md-color-scheme="default"] .md-typeset details.caution,
+[data-md-color-scheme="default"] .md-typeset .admonition.failure,
+[data-md-color-scheme="default"] .md-typeset details.failure,
+[data-md-color-scheme="default"] .md-typeset .admonition.error,
+[data-md-color-scheme="default"] .md-typeset details.error,
+[data-md-color-scheme="default"] .md-typeset .admonition.bug,
+[data-md-color-scheme="default"] .md-typeset details.bug {
+  background-color: rgba(155,108,53,0.08);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.warning,
+[data-md-color-scheme="slate"] .md-typeset details.warning,
+[data-md-color-scheme="slate"] .md-typeset .admonition.caution,
+[data-md-color-scheme="slate"] .md-typeset details.caution,
+[data-md-color-scheme="slate"] .md-typeset .admonition.failure,
+[data-md-color-scheme="slate"] .md-typeset details.failure,
+[data-md-color-scheme="slate"] .md-typeset .admonition.error,
+[data-md-color-scheme="slate"] .md-typeset details.error,
+[data-md-color-scheme="slate"] .md-typeset .admonition.bug,
+[data-md-color-scheme="slate"] .md-typeset details.bug {
+  background-color: rgba(155,108,53,0.12);
+}
+
+/* --------------------------------------------------------------------------
+   WCAG / audit mód
+   -------------------------------------------------------------------------- */
+
+body.wcag-mode .md-typeset .admonition,
+body.wcag-mode .md-typeset details,
+body.audit-mode .md-typeset .admonition,
+body.audit-mode .md-typeset details {
+  transform: none !important;
+  box-shadow: none !important;
+  border: 1px solid var(--fw-border-soft-light);
+  border-left-width: 4px;
+  background-color: transparent !important;
+}
+
+body.wcag-mode[data-md-color-scheme="slate"] .md-typeset .admonition,
+body.wcag-mode[data-md-color-scheme="slate"] .md-typeset details,
+body.audit-mode[data-md-color-scheme="slate"] .md-typeset .admonition,
+body.audit-mode[data-md-color-scheme="slate"] .md-typeset details {
+  border: 1px solid var(--fw-border-soft-dark);
+  border-left-width: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   Csökkentett mozgás
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .admonition,
+  .md-typeset details { transition: none; }
+
+  .md-typeset .admonition:focus-within,
+  .md-typeset details[open] { transform: none; }
+}
+
+/* --------------------------------------------------------------------------
+   Admonition / details Bezárás gomb
+   -------------------------------------------------------------------------- */
+
+.md-typeset details .fw-admonition-close-wrap {
+  margin-top: .85rem;
+  padding-top: .65rem;
+  border-top: 1px solid rgba(117,117,117,.20);
+}
+
+.md-typeset details:not([open]) .fw-admonition-close-wrap {
+  display: none !important;
+}
+
+.md-typeset .fw-admonition-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: .48em .9em;
+  border-radius: .8rem;
+  border: 1px solid rgba(117,117,117,.28);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.3;
+  cursor: pointer;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 3px 8px rgba(0,0,0,.04);
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    border-color 140ms ease,
+    background-color 140ms ease;
+}
+
+.md-typeset .fw-admonition-close:hover {
+  transform: translateY(1px);
+  border-color: var(--fw-accent, #B05A2A);
+  box-shadow:
+    0 1px 3px rgba(0,0,0,.04);
+}
+
+.md-typeset .fw-admonition-close:active {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 1px 2px rgba(0,0,0,.08);
+  background-color: rgba(0,0,0,.03);
+}
+
+.md-typeset .fw-admonition-close:focus-visible {
+  outline: 2px solid var(--fw-accent, #B05A2A);
+  outline-offset: 3px;
+  border-color: var(--fw-accent, #B05A2A);
+}
+
+[data-md-color-scheme="slate"] .md-typeset details .fw-admonition-close-wrap {
+  border-top-color: rgba(255,255,255,.14);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .fw-admonition-close {
+  border-color: rgba(255,255,255,.14);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.24),
+    0 4px 10px rgba(0,0,0,.28);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .fw-admonition-close:active {
+  background-color: rgba(255,255,255,.04);
+  box-shadow:
+    inset 0 1px 2px rgba(0,0,0,.35);
+}
+
+body.wcag-mode .md-typeset details .fw-admonition-close-wrap,
+body.audit-mode .md-typeset details .fw-admonition-close-wrap {
+  border-top: 1px solid currentColor;
+}
+
+body.wcag-mode .md-typeset .fw-admonition-close,
+body.audit-mode .md-typeset .fw-admonition-close {
+  transform: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--fw-accent, #B05A2A);
+  background: transparent !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .fw-admonition-close {
+    transition: none;
+  }
+
+  .md-typeset .fw-admonition-close:hover,
+  .md-typeset .fw-admonition-close:active {
+    transform: none;
+  }
+}

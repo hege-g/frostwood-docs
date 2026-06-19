@@ -1,0 +1,219 @@
+.md-typeset blockquote { margin:0 0 1.3rem; padding:1rem 1.15rem; border-left:3px solid #5c5c5c; border-radius:.85rem; }
+[data-md-color-scheme="default"] .md-typeset blockquote { background:#F5F5F5; color:#2f2f2f; }
+[data-md-color-scheme="slate"] .md-typeset blockquote { background:#252525; color:#E0E0E0; }
+.md-typeset blockquote p { margin:.18rem 0; }
+.md-typeset blockquote p:last-child { margin-top:.6rem; font-weight:600; }
+.md-typeset h1 { margin-bottom:.8rem; }
+.md-typeset h2,.md-typeset h3 { margin-top:1.8rem; }
+.md-typeset hr { margin:1.6rem 0; opacity:.5; }
+.md-typeset ul li + li { margin-top:.2rem; }
+.md-typeset img + .admonition,.md-typeset img + details,.md-typeset .mermaid + .admonition,.md-typeset .mermaid + details { margin-top:1rem; }
+.fw-soft-card { border-radius:1rem; padding:1rem 1.15rem; }
+[data-md-color-scheme="default"] .fw-soft-card { background:rgba(0,0,0,.018); }
+[data-md-color-scheme="slate"] .fw-soft-card { background:rgba(255,255,255,.025); }
+.fw-logo { width:64px; height:64px; display:inline-block; }
+.fw-watermark { width:160px; height:160px; opacity:.3; pointer-events:none; }
+.fw-section-lead { color:var(--md-default-fg-color--light); margin-top:-.2rem; margin-bottom:1rem; }
+
+/* Frostwood hierarchical cardification v2 */
+.md-typeset .frostwood-header-cards,
+.md-typeset .frostwood-toc-cards,
+.md-typeset .frostwood-section-cards { margin: 1rem 0 1.25rem; }
+
+.md-typeset .frostwood-header-cards > ul,
+.md-typeset .frostwood-toc-cards > ul,
+.md-typeset .frostwood-section-cards > ul { align-items: stretch; }
+
+.md-typeset .frostwood-header-cards > ul > li,
+.md-typeset .frostwood-toc-cards > ul > li,
+.md-typeset .frostwood-section-cards > ul > li {
+  border-radius: 1.05rem;
+  border: 1px solid rgba(117, 117, 117, .22);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset .frostwood-header-cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .frostwood-toc-cards > ul > li,
+[data-md-color-scheme="default"] .md-typeset .frostwood-section-cards > ul > li {
+  box-shadow: 0 2px 6px rgba(0,0,0,.055), 0 12px 26px rgba(0,0,0,.045);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .frostwood-header-cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-toc-cards > ul > li,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-section-cards > ul > li {
+  border-color: rgba(255,255,255,.10);
+  box-shadow: 0 2px 8px rgba(0,0,0,.35), 0 14px 32px rgba(0,0,0,.28);
+}
+
+.md-typeset .frostwood-header-cards > ul > li:hover,
+.md-typeset .frostwood-toc-cards > ul > li:hover,
+.md-typeset .frostwood-section-cards > ul > li:hover,
+.md-typeset .frostwood-header-cards > ul > li:focus-within,
+.md-typeset .frostwood-toc-cards > ul > li:focus-within,
+.md-typeset .frostwood-section-cards > ul > li:focus-within {
+  transform: perspective(900px) rotateX(.45deg) translateY(-1px);
+}
+
+[data-md-color-scheme="default"] .md-typeset .frostwood-header-cards > ul > li:hover,
+[data-md-color-scheme="default"] .md-typeset .frostwood-toc-cards > ul > li:hover,
+[data-md-color-scheme="default"] .md-typeset .frostwood-section-cards > ul > li:hover,
+[data-md-color-scheme="default"] .md-typeset .frostwood-header-cards > ul > li:focus-within,
+[data-md-color-scheme="default"] .md-typeset .frostwood-toc-cards > ul > li:focus-within,
+[data-md-color-scheme="default"] .md-typeset .frostwood-section-cards > ul > li:focus-within {
+  box-shadow: 0 4px 10px rgba(0,0,0,.075), 0 16px 34px rgba(0,0,0,.06);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .frostwood-header-cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-toc-cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-section-cards > ul > li:hover,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-header-cards > ul > li:focus-within,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-toc-cards > ul > li:focus-within,
+[data-md-color-scheme="slate"] .md-typeset .frostwood-section-cards > ul > li:focus-within {
+  box-shadow: 0 4px 12px rgba(0,0,0,.42), 0 18px 38px rgba(0,0,0,.34);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .frostwood-header-cards > ul > li,
+  .md-typeset .frostwood-toc-cards > ul > li,
+  .md-typeset .frostwood-section-cards > ul > li { transition: none; }
+  .md-typeset .frostwood-header-cards > ul > li:hover,
+  .md-typeset .frostwood-toc-cards > ul > li:hover,
+  .md-typeset .frostwood-section-cards > ul > li:hover,
+  .md-typeset .frostwood-header-cards > ul > li:focus-within,
+  .md-typeset .frostwood-toc-cards > ul > li:focus-within,
+  .md-typeset .frostwood-section-cards > ul > li:focus-within { transform: none; }
+}
+
+body.wcag-mode .md-typeset .frostwood-header-cards > ul > li,
+body.wcag-mode .md-typeset .frostwood-toc-cards > ul > li,
+body.wcag-mode .md-typeset .frostwood-section-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-header-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-toc-cards > ul > li,
+body.audit-mode .md-typeset .frostwood-section-cards > ul > li {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.md-typeset .frostwood-header-cards > ul > li { border-left: .25rem solid var(--fw-accent, #B05A2A); }
+.md-typeset .frostwood-header-cards > ul > li > h1 { margin-top: 0; margin-bottom: .7rem; }
+.md-typeset .frostwood-toc-cards > ul > li { min-height: unset; }
+.md-typeset .frostwood-toc-cards ul { margin-top: .45rem; }
+.md-typeset .frostwood-toc-cards li + li { margin-top: .18rem; }
+.md-typeset .frostwood-toc-cards a { text-decoration: none; }
+.md-typeset .frostwood-toc-cards a:hover { text-decoration: underline; }
+.md-typeset .frostwood-section-cards h2,
+.md-typeset .frostwood-section-cards h3,
+.md-typeset .frostwood-section-cards h4 { margin-top: 0; }
+.md-typeset .grid.cards ol,
+.md-typeset .grid.cards ol ol,
+.md-typeset .grid.cards > ul > li ol { list-style-type: decimal; }
+
+/* --------------------------------------------------------------------------
+   Frostwood gombok – Material MkDocs .md-button finomhangolás
+   --------------------------------------------------------------------------
+   Elv:
+   - normál gomb: csendes, keretes navigációs elem;
+   - primary gomb: visszafogott Frostwood-hangsúly, nem marketing CTA;
+   - használatkor finom "benyomódó" érzet;
+   - WCAG/audit módban árnyék és mozgás nélkül, tiszta kerettel.
+   -------------------------------------------------------------------------- */
+
+.md-typeset .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .35em;
+  margin-top: .45rem;
+  margin-bottom: .25rem;
+  padding: .62em 1.05em;
+  border-radius: .9rem;
+  border: 1px solid rgba(117, 117, 117, .28);
+  background: transparent;
+  color: inherit;
+  line-height: 1.35;
+  text-decoration: none;
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.06),
+    0 3px 8px rgba(0,0,0,.04);
+  transition:
+    transform 140ms ease,
+    box-shadow 140ms ease,
+    border-color 140ms ease,
+    background-color 140ms ease;
+}
+
+.md-typeset .md-button.md-button--primary {
+  border-color: var(--fw-accent, #B05A2A);
+  background: rgba(176,90,42,.12);
+  color: inherit;
+}
+
+.md-typeset .frostwood-section-cards .md-button,
+.md-typeset .frostwood-header-cards .md-button,
+.md-typeset .frostwood-toc-cards .md-button {
+  margin-top: .75rem;
+}
+
+.md-typeset .md-button:hover {
+  transform: translateY(1px);
+  border-color: var(--fw-accent, #B05A2A);
+  box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  text-decoration: none;
+}
+
+.md-typeset .md-button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.08);
+  background-color: rgba(0,0,0,.03);
+}
+
+.md-typeset .md-button:focus-visible {
+  outline: 2px solid var(--fw-accent, #B05A2A);
+  outline-offset: 3px;
+  border-color: var(--fw-accent, #B05A2A);
+  text-decoration: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button {
+  border-color: rgba(255,255,255,.14);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,.24),
+    0 4px 10px rgba(0,0,0,.28);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button.md-button--primary {
+  border-color: var(--fw-accent, #B05A2A);
+  background: rgba(176,90,42,.16);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:hover {
+  box-shadow: 0 1px 3px rgba(0,0,0,.22);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button:active {
+  background-color: rgba(255,255,255,.04);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.35);
+}
+
+body.wcag-mode .md-typeset .md-button,
+body.audit-mode .md-typeset .md-button {
+  transform: none !important;
+  box-shadow: none !important;
+  border: 2px solid var(--fw-accent, #B05A2A);
+  background: transparent !important;
+}
+
+body.wcag-mode .md-typeset .md-button:hover,
+body.wcag-mode .md-typeset .md-button:active,
+body.audit-mode .md-typeset .md-button:hover,
+body.audit-mode .md-typeset .md-button:active {
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .md-button { transition: none; }
+  .md-typeset .md-button:hover,
+  .md-typeset .md-button:active,
+  .md-typeset .md-button:focus-visible { transform: none; }
+}

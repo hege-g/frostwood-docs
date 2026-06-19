@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="fw-ref-97-v3-title fw-ref-97-v3-desc" shape-rendering="geometricPrecision">
+  <title id="fw-ref-97-v3-title">Frostwood 97 – Ikonarchitektúra</title>
+  <desc id="fw-ref-97-v3-desc">Izometrikus rajzlap nagyított körrel, négyzettel, háromszöggel és erősített L-alakú vonalzóval, az Ikonarchitektúra útmutató 32 pixeles navigációs ikonjához.</desc>
+  <defs>
+    <linearGradient id="fw-ref-97-v3-bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#F3F6FA"/>
+    </linearGradient>
+    <linearGradient id="fw-ref-97-v3-baseTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F7FA"/>
+      <stop offset="100%" stop-color="#E8EDF2"/>
+    </linearGradient>
+    <linearGradient id="fw-ref-97-v3-baseLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E0E8F0"/>
+      <stop offset="100%" stop-color="#D4DDE6"/>
+    </linearGradient>
+    <linearGradient id="fw-ref-97-v3-baseRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4DDE7"/>
+      <stop offset="100%" stop-color="#C3CED9"/>
+    </linearGradient>
+    <linearGradient id="fw-ref-97-v3-sheet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FBFBFB"/>
+    </linearGradient>
+    <linearGradient id="fw-ref-97-v3-ruler" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#CCDCEE"/>
+      <stop offset="100%" stop-color="#B0C4DE"/>
+    </linearGradient>
+    <filter id="fw-ref-97-v3-softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+    <style>
+      .bg-panel { fill: url(#fw-ref-97-v3-bgLight); }
+      .shadow { fill: #8FA3B5; opacity: 0.14; }
+
+      .sketch {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .main { stroke-width: 1.7; }
+      .shape-stroke { stroke-width: 2.05; }
+      .minor {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .base-top { fill: url(#fw-ref-97-v3-baseTop); stroke: #5F6E7C; }
+      .base-left { fill: url(#fw-ref-97-v3-baseLeft); stroke: #5F6E7C; }
+      .base-right { fill: url(#fw-ref-97-v3-baseRight); stroke: #5F6E7C; }
+
+      .sheet-top { fill: url(#fw-ref-97-v3-sheet); stroke: #5F6E7C; }
+      .sheet-side { fill: #F2F2F2; stroke: #5F6E7C; }
+
+      .grid-line { stroke: #CCD5DE; stroke-width: 1.0; opacity: 0.62; }
+      .grid-strong { stroke: #BFC9D3; stroke-width: 1.2; opacity: 0.72; }
+
+      .shape-circle { fill: #5A7FA6; stroke: #344F6A; }
+      .shape-square { fill: #757575; stroke: #3F3F3F; }
+      .shape-triangle { fill: #E8A86A; stroke: #9C6630; }
+
+      .ruler-main { fill: url(#fw-ref-97-v3-ruler); stroke: #506170; stroke-width: 1.95; }
+      .ruler-edge { fill: #8EA7C2; stroke: #506170; stroke-width: 1.6; }
+      .ruler-mark { stroke: #506170; stroke-width: 1.05; opacity: 0.58; }
+
+      .decorative-guide {
+        fill: none;
+        stroke: #AAB8C7;
+        stroke-width: 1.0;
+        opacity: 0.08;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .bg-panel { fill: #252525; }
+        .shadow { fill: #000000; opacity: 0.22; }
+
+        .base-top,.base-left,.base-right,
+        .sheet-top,.sheet-side,
+        .ruler-main,.ruler-edge,
+        .shape-circle,.shape-square,.shape-triangle {
+          stroke: #D7E1EA;
+        }
+
+        .grid-line { stroke: #536577; opacity: 0.42; }
+        .grid-strong { stroke: #6F8498; opacity: 0.54; }
+        .ruler-mark { stroke: #D7E1EA; opacity: 0.42; }
+        .decorative-guide { stroke: #536577; opacity: 0.14; }
+      }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="34" class="bg-panel"/>
+  <ellipse cx="256" cy="400" rx="142" ry="34" class="shadow" filter="url(#fw-ref-97-v3-softShadow)" aria-hidden="true"/>
+
+  <g id="decorative" aria-hidden="true" class="decorative-guide">
+    <path d="M122 150 256 78 390 150 256 222Z"/>
+    <path d="M122 150v58l134 72 134-72v-58"/>
+  </g>
+
+  <g id="base">
+    <polygon class="base-top sketch main" points="102,302 256,218 410,302 256,386"/>
+    <polygon class="base-left sketch main" points="102,302 256,386 256,432 102,348"/>
+    <polygon class="base-right sketch main" points="410,302 256,386 256,432 410,348"/>
+  </g>
+
+  <g id="sheet">
+    <polygon class="sheet-side sketch main" points="132,256 258,322 258,352 132,286"/>
+    <polygon class="sheet-side sketch main" points="376,254 258,322 258,352 376,284"/>
+    <polygon class="sheet-top sketch main" points="132,256 252,190 376,254 258,322"/>
+  </g>
+
+  <g id="grid" aria-hidden="true">
+    <path class="minor grid-strong" d="M230 202 354 266"/>
+    <path class="minor grid-line" d="M168 270 282 207"/>
+    <path class="minor grid-line" d="M220 298 334 235"/>
+  </g>
+
+  <g id="shapes">
+    <ellipse class="shape-circle sketch shape-stroke" cx="211" cy="238" rx="26" ry="16" transform="rotate(29 211 238)"/>
+    <polygon class="shape-square sketch shape-stroke" points="180,280 224,256 268,280 224,304"/>
+    <polygon class="shape-triangle sketch shape-stroke" points="305,224 354,253 295,290"/>
+  </g>
+
+  <g id="ruler">
+    <polygon class="ruler-main sketch" points="292,306 366,266 388,279 314,322"/>
+    <polygon class="ruler-main sketch" points="314,322 340,307 340,360 314,374"/>
+    <polygon class="ruler-edge sketch" points="366,266 388,279 388,334 362,348 362,297 292,337 292,306"/>
+    <path class="minor ruler-mark" d="M323 304l10 6M350 289l10 6"/>
+    <path class="minor ruler-mark" d="M328 337l12-7M328 358l12-7"/>
+  </g>
+</svg>

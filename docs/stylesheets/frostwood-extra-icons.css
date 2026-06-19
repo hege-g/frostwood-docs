@@ -1,0 +1,275 @@
+/* ==========================================================================
+   frostwood-extra-icons.css
+   Frostwood Docs – Végleges ikonarchitektúra
+   ========================================================================== */
+
+.md-tabs__link::before,
+.md-nav__link::before,
+.fw-module-header-icon,
+.fw-module-card-icon,
+.fw-appendix-header-icon,
+[class*="fw-block-icon-main-"] {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.md-tabs__link,
+.md-nav__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.md-tabs__link::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .45rem;
+}
+
+.md-nav__link::before {
+  width: 1rem;
+  height: 1rem;
+  margin-right: .4rem;
+}
+
+.md-nav__link[href$="index.md/"]::before,
+.md-nav__link[href="./"]::before,
+.md-nav__link[href$="rendszerkartya.md/"]::before,
+.md-nav__link[href$="rendszerdiagram.md/"]::before,
+.md-nav__link[href$="letoltesek.md/"]::before,
+.md-nav__link[href$="alapok-blokk.md/"]::before,
+.md-nav__link[href$="rendszer-blokk.md/"]::before,
+.md-nav__link[href$="alkalmazasok-blokk.md/"]::before,
+.md-nav__link[href$="referenciak-blokk.md/"]::before,
+.md-nav__link[href$="license.md/"]::before {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* A) Felső tab ikonok */
+
+.md-tabs__link[aria-label="Kezdőlap"]::before { background-image: url("../assets/icons/fw-main-kezdolap-dashboard-iso.svg"); }
+.md-tabs__link[aria-label="Gyors áttekintés"]::before { background-image: url("../assets/icons/fw-main-gyors-attekintes-villam-iso.svg"); }
+.md-tabs__link[aria-label="Dokumentációs blokkok"]::before { background-image: url("../assets/icons/fw-main-dokumentacios-hub-iso.svg"); }
+.md-tabs__link[aria-label="Letöltések"]::before { background-image: url("../assets/icons/fw-main-letoltesek-fagyott-fa-iso.svg"); }
+.md-tabs__link[aria-label="Alapok"]::before { background-image: url("../assets/icons/fw-main-alapok-retegzett-kocka-iso.svg"); }
+.md-tabs__link[aria-label="Rendszer"]::before { background-image: url("../assets/icons/fw-main-rendszer-fogaskerekek-iso.svg"); }
+.md-tabs__link[aria-label="Alkalmazások"]::before { background-image: url("../assets/icons/fw-main-alkalmazasok-uveglap-alkalmazasnegyzet-iso.svg"); }
+.md-tabs__link[aria-label="Referenciák"]::before { background-image: url("../assets/icons/fw-main-referenciak-archivum-mappa-iso.svg"); }
+.md-tabs__link[aria-label="Licenc"]::before { background-image: url("../assets/icons/fw-special-license-merleg-iso.svg"); }
+
+/* B) Oldalsó nav ikonok */
+.md-nav__link[href$="index.md/"]::before, .md-nav__link[href="./"]::before { background-image: url("../assets/icons/fw-main-kezdolap-dashboard-iso.svg"); }
+.md-nav__link[href$="rendszerkartya.md/"]::before { background-image: url("../assets/icons/fw-special-rendszerkartya-kapcsolotabla-iso.svg"); }
+.md-nav__link[href$="rendszerdiagram.md/"]::before { background-image: url("../assets/icons/fw-special-rendszerdiagram-tervrajz-iso.svg"); }
+.md-nav__link[href$="letoltesek.md/"]::before { background-image: url("../assets/icons/fw-main-letoltesek-fagyott-fa-iso.svg"); }
+.md-nav__link[href$="alapok-blokk.md/"]::before { background-image: url("../assets/icons/fw-main-alapok-retegzett-kocka-iso.svg"); }
+.md-nav__link[href$="rendszer-blokk.md/"]::before { background-image: url("../assets/icons/fw-main-rendszer-fogaskerekek-iso.svg"); }
+.md-nav__link[href$="alkalmazasok-blokk.md/"]::before { background-image: url("../assets/icons/fw-main-alkalmazasok-uveglap-alkalmazasnegyzet-iso.svg"); }
+.md-nav__link[href$="referenciak-blokk.md/"]::before { background-image: url("../assets/icons/fw-main-referenciak-archivum-mappa-iso.svg"); }
+.md-nav__link[href$="license.md/"]::before { background-image: url("../assets/icons/fw-special-license-merleg-iso.svg"); }
+.md-nav__link[href$="01-attekintes.md/"]::before { background-image: url("../assets/icons/fw-alapok-01-iranytu-iso.svg"); }
+.md-nav__link[href$="02-rendszerleiras.md/"]::before { background-image: url("../assets/icons/fw-alapok-02-harom-lebego-uveglap-iso.svg"); }
+.md-nav__link[href$="03-szin-rendszer.md/"]::before { background-image: url("../assets/icons/fw-alapok-03-szin-rendszer-iso.svg"); }
+.md-nav__link[href$="04-wcag-fokusz-reteg.md/"]::before { background-image: url("../assets/icons/fw-alapok-04-izolalt-fokuszsziget-iso.svg"); }
+.md-nav__link[href$="05-jelzesmechanika.md/"]::before { background-image: url("../assets/icons/fw-alapok-05-radiotorony-iso.svg"); }
+.md-nav__link[href$="06-rendszerszintu-akadalymentessegi-alapelvek.md/"]::before { background-image: url("../assets/icons/fw-alapok-06-negy-oszlop-iso.svg"); }
+.md-nav__link[href$="07-ikonrendszer-es-jaws-vezerles.md/"]::before { background-image: url("../assets/icons/fw-alapok-07-billentyuzet-es-fejhallgato-iso.svg"); }
+.md-nav__link[href$="08-rendszer-ikonok.md/"]::before { background-image: url("../assets/icons/fw-alapok-08-ikonracs-iso.svg"); }
+.md-nav__link[href$="09-otthon-munka-ikonok.md/"]::before { background-image: url("../assets/icons/fw-alapok-09-haz-es-irodahaz-iso.svg"); }
+.md-nav__link[href$="11-munka-asztal-modell.md/"]::before { background-image: url("../assets/icons/fw-rendszer-11-iroasztal-egy-monitorral-iso.svg"); }
+.md-nav__link[href$="12-autodarkmode-technikai-mukodesi-integracio.md/"]::before { background-image: url("../assets/icons/fw-rendszer-12-felig-vilagos-felig-sotet-kapszula-iso.svg"); }
+.md-nav__link[href$="13-softlock-rendszer.md/"]::before { background-image: url("../assets/icons/fw-rendszer-13-lakat-helyreallito-korivvel-iso.svg"); }
+.md-nav__link[href$="14-travel-mod-opcionalis-modul.md/"]::before { background-image: url("../assets/icons/fw-rendszer-14-repulogep-utazasi-palyaval-iso.svg"); }
+.md-nav__link[href$="15-zarokepernyo-es-kepernyokimelo.md/"]::before { background-image: url("../assets/icons/fw-rendszer-15-fuggoleges-pajzs-kepernyoreteggel-iso.svg"); }
+.md-nav__link[href$="16-installer-specifikacio.md/"]::before { background-image: url("../assets/icons/fw-rendszer-16-nyitott-kartondoboz-kiemelkedo-alkatreszekkel-iso.svg"); }
+.md-nav__link[href$="17-eltavolitas-visszaallitas.md/"]::before { background-image: url("../assets/icons/fw-rendszer-17-szemeteskuka-visszaallito-U-nyillal-iso.svg"); }
+.md-nav__link[href$="18-akadalymentesitett-batch-keretrendszer.md/"]::before { background-image: url("../assets/icons/fw-rendszer-18-terminal-ablak-zold-parancssorokkal-iso.svg"); }
+.md-nav__link[href$="19-rendszer-blokk-architektura-terkep--dev-audit.md/"]::before { background-image: url("../assets/icons/fw-rendszer-19-halozati-terkep-pontokkal-vonalakkal-iso.svg"); }
+.md-nav__link[href$="21-windows-11-fajlkezelo.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-21-kek-mappa-iso.svg"); }
+.md-nav__link[href$="22-total-commander.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-22-ket-egymasnak-forditott-panel-iso.svg"); }
+.md-nav__link[href$="23-microsoft-edge.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-23-foldgomb-rendszerbongeszo-jelolessel-iso.svg"); }
+.md-nav__link[href$="24-google-chrome.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-24-foldgomb-elkulonitett-profilgyuruvel-iso.svg"); }
+.md-nav__link[href$="25-mozilla-firefox.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-25-foldgomb-kulon-peldany-jelolessel-iso.svg"); }
+.md-nav__link[href$="26-microsoft-office.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-26-dokumentum-halom-word-excel-lapokkal-iso.svg"); }
+.md-nav__link[href$="27-meta-chat.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-27-beszelgetesi-buborekok-iso.svg"); }
+.md-nav__link[href$="28-zoom.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-28-kamera-iso.svg"); }
+.md-nav__link[href$="29-windows-narrator.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-29-hangszoro-narracios-hullam-iso.svg"); }
+.md-nav__link[href$="30-jaws-for-windows.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-30-hangszoro-billentyus-jaws-jel-iso.svg"); }
+.md-nav__link[href$="31-insta360-studio.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-31-gombtest-360-felirat-akciokamera-iso.svg"); }
+.md-nav__link[href$="32-chatgpt.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-32-mi-agy-csomopontok-kapcsolati-vonalak-iso.svg"); }
+.md-nav__link[href$="33-gemini.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-33-csillogo-kristaly-iso.svg"); }
+.md-nav__link[href$="34-windows-lomtar.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-34-papirkosar-iso.svg"); }
+.md-nav__link[href$="89-alkalmazasok-blokk-architektura--dev.md/"]::before { background-image: url("../assets/icons/fw-alkalmazasok-89-kartya-modulcsatlakozok-alkalmazasjel-iso.svg"); }
+.md-nav__link[href$="91-szinkodok.md/"]::before { background-image: url("../assets/icons/fw-referenciak-91-szinmintakartyak-iso.svg"); }
+.md-nav__link[href$="92-jelzes-szinek.md/"]::before { background-image: url("../assets/icons/fw-referenciak-92-allapotjelzo-szinmintak-ikonformakkal-iso.svg"); }
+.md-nav__link[href$="93-utiterv.md/"]::before { background-image: url("../assets/icons/fw-referenciak-93-lepcso-iso.svg"); }
+.md-nav__link[href$="94-rendszer-attekintes.md/"]::before { background-image: url("../assets/icons/fw-referenciak-94-nagyito-tervrajz-felett-iso.svg"); }
+.md-nav__link[href$="95-valtozasnaplo.md/"]::before { background-image: url("../assets/icons/fw-referenciak-95-homokora-naplolappal-iso.svg"); }
+.md-nav__link[href$="96-telepitocsomag-struktura.md/"]::before { background-image: url("../assets/icons/fw-referenciak-96-fa-struktura-mappakkal-iso.svg"); }
+.md-nav__link[href$="97-frostwood-ikonarchitektura-guide.md/"]::before { background-image: url("../assets/icons/fw-referenciak-97-rajzlap-korrel-negyzettel-haromszoggel-l-vonalzoval-iso.svg"); }
+.md-nav__link[href$="99-referenciak-blokk-architektura--dev.md/"]::before { background-image: url("../assets/icons/fw-referenciak-99-meroszalag-vonalzo-allo-tervrajz-iso.svg"); }
+
+/* C) Modul ikonrendszer: C1 H1, C2 blokkoldali H3 fölött */
+.fw-module-header-icon,
+.fw-module-card-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 0 .45rem 0;
+}
+
+.fw-module-header-icon,
+.fw-module-card-icon {
+  display: block;
+}
+
+.fw-module-card-icon {
+  text-decoration: none;
+}
+
+.fw-module-card-icon:hover,
+.fw-module-card-icon:focus-visible {
+  text-decoration: none;
+  outline: 2px solid var(--fw-accent, #B05A2A);
+  outline-offset: 4px;
+  border-radius: .35rem;
+}
+
+.fw-module-01, .fw-module-01-attekintes { background-image: url("../assets/icons/fw-alapok-01-iranytu-iso.svg"); }
+.fw-module-02, .fw-module-02-rendszerleiras { background-image: url("../assets/icons/fw-alapok-02-harom-lebego-uveglap-iso.svg"); }
+.fw-module-03, .fw-module-03-szin-rendszer { background-image: url("../assets/icons/fw-alapok-03-szin-rendszer-iso.svg"); }
+.fw-module-04, .fw-module-04-wcag-fokusz-reteg { background-image: url("../assets/icons/fw-alapok-04-izolalt-fokuszsziget-iso.svg"); }
+.fw-module-05, .fw-module-05-jelzesmechanika { background-image: url("../assets/icons/fw-alapok-05-radiotorony-iso.svg"); }
+.fw-module-06, .fw-module-06-rendszerszintu-akadalymentessegi-alapelvek { background-image: url("../assets/icons/fw-alapok-06-negy-oszlop-iso.svg"); }
+.fw-module-07, .fw-module-07-ikonrendszer-es-jaws-vezerles { background-image: url("../assets/icons/fw-alapok-07-billentyuzet-es-fejhallgato-iso.svg"); }
+.fw-module-08, .fw-module-08-rendszer-ikonok { background-image: url("../assets/icons/fw-alapok-08-ikonracs-iso.svg"); }
+.fw-module-09, .fw-module-09-otthon-munka-ikonok { background-image: url("../assets/icons/fw-alapok-09-haz-es-irodahaz-iso.svg"); }
+.fw-module-11, .fw-module-11-munka-asztal-modell { background-image: url("../assets/icons/fw-rendszer-11-iroasztal-egy-monitorral-iso.svg"); }
+.fw-module-12, .fw-module-12-autodarkmode-technikai-mukodesi-integracio { background-image: url("../assets/icons/fw-rendszer-12-felig-vilagos-felig-sotet-kapszula-iso.svg"); }
+.fw-module-13, .fw-module-13-softlock-rendszer { background-image: url("../assets/icons/fw-rendszer-13-lakat-helyreallito-korivvel-iso.svg"); }
+.fw-module-14, .fw-module-14-travel-mod-opcionalis-modul { background-image: url("../assets/icons/fw-rendszer-14-repulogep-utazasi-palyaval-iso.svg"); }
+.fw-module-15, .fw-module-15-zarokepernyo-es-kepernyokimelo { background-image: url("../assets/icons/fw-rendszer-15-fuggoleges-pajzs-kepernyoreteggel-iso.svg"); }
+.fw-module-16, .fw-module-16-installer-specifikacio { background-image: url("../assets/icons/fw-rendszer-16-nyitott-kartondoboz-kiemelkedo-alkatreszekkel-iso.svg"); }
+.fw-module-17, .fw-module-17-eltavolitas-visszaallitas { background-image: url("../assets/icons/fw-rendszer-17-szemeteskuka-visszaallito-U-nyillal-iso.svg"); }
+.fw-module-18, .fw-module-18-akadalymentesitett-batch-keretrendszer { background-image: url("../assets/icons/fw-rendszer-18-terminal-ablak-zold-parancssorokkal-iso.svg"); }
+.fw-module-19, .fw-module-19-rendszer-blokk-architektura-terkep { background-image: url("../assets/icons/fw-rendszer-19-halozati-terkep-pontokkal-vonalakkal-iso.svg"); }
+.fw-module-21, .fw-module-21-windows-11-fajlkezelo { background-image: url("../assets/icons/fw-alkalmazasok-21-kek-mappa-iso.svg"); }
+.fw-module-22, .fw-module-22-total-commander { background-image: url("../assets/icons/fw-alkalmazasok-22-ket-egymasnak-forditott-panel-iso.svg"); }
+.fw-module-23, .fw-module-23-microsoft-edge { background-image: url("../assets/icons/fw-alkalmazasok-23-foldgomb-rendszerbongeszo-jelolessel-iso.svg"); }
+.fw-module-24, .fw-module-24-google-chrome { background-image: url("../assets/icons/fw-alkalmazasok-24-foldgomb-elkulonitett-profilgyuruvel-iso.svg"); }
+.fw-module-25, .fw-module-25-mozilla-firefox { background-image: url("../assets/icons/fw-alkalmazasok-25-foldgomb-kulon-peldany-jelolessel-iso.svg"); }
+.fw-module-26, .fw-module-26-microsoft-office { background-image: url("../assets/icons/fw-alkalmazasok-26-dokumentum-halom-word-excel-lapokkal-iso.svg"); }
+.fw-module-27, .fw-module-27-meta-chat { background-image: url("../assets/icons/fw-alkalmazasok-27-beszelgetesi-buborekok-iso.svg"); }
+.fw-module-28, .fw-module-28-zoom { background-image: url("../assets/icons/fw-alkalmazasok-28-kamera-iso.svg"); }
+.fw-module-29, .fw-module-29-windows-narrator { background-image: url("../assets/icons/fw-alkalmazasok-29-hangszoro-narracios-hullam-iso.svg"); }
+.fw-module-30, .fw-module-30-jaws-for-windows { background-image: url("../assets/icons/fw-alkalmazasok-30-hangszoro-billentyus-jaws-jel-iso.svg"); }
+.fw-module-31, .fw-module-31-insta360-studio { background-image: url("../assets/icons/fw-alkalmazasok-31-gombtest-360-felirat-akciokamera-iso.svg"); }
+.fw-module-32, .fw-module-32-chatgpt { background-image: url("../assets/icons/fw-alkalmazasok-32-mi-agy-csomopontok-kapcsolati-vonalak-iso.svg"); }
+.fw-module-33, .fw-module-33-gemini { background-image: url("../assets/icons/fw-alkalmazasok-33-csillogo-kristaly-iso.svg"); }
+.fw-module-34, .fw-module-34-windows-lomtar { background-image: url("../assets/icons/fw-alkalmazasok-34-papirkosar-iso.svg"); }
+.fw-module-89, .fw-module-89-alkalmazasok-blokk-architektura { background-image: url("../assets/icons/fw-alkalmazasok-89-kartya-modulcsatlakozok-alkalmazasjel-iso.svg"); }
+.fw-module-91, .fw-module-91-szinkodok { background-image: url("../assets/icons/fw-referenciak-91-szinmintakartyak-iso.svg"); }
+.fw-module-92, .fw-module-92-jelzes-szinek { background-image: url("../assets/icons/fw-referenciak-92-allapotjelzo-szinmintak-ikonformakkal-iso.svg"); }
+.fw-module-93, .fw-module-93-utiterv { background-image: url("../assets/icons/fw-referenciak-93-lepcso-iso.svg"); }
+.fw-module-94, .fw-module-94-rendszer-attekintes { background-image: url("../assets/icons/fw-referenciak-94-nagyito-tervrajz-felett-iso.svg"); }
+.fw-module-95, .fw-module-95-valtozasnaplo { background-image: url("../assets/icons/fw-referenciak-95-homokora-naplolappal-iso.svg"); }
+.fw-module-96, .fw-module-96-telepitocsomag-struktura { background-image: url("../assets/icons/fw-referenciak-96-fa-struktura-mappakkal-iso.svg"); }
+.fw-module-97, .fw-module-97-frostwood-ikonarchitektura { background-image: url("../assets/icons/fw-referenciak-97-rajzlap-korrel-negyzettel-haromszoggel-l-vonalzoval-iso.svg"); }
+.fw-module-99, .fw-module-99-referenciak-blokk-architektura { background-image: url("../assets/icons/fw-referenciak-99-meroszalag-vonalzo-allo-tervrajz-iso.svg"); }
+
+/* D) Függelék header ikonok */
+.fw-appendix-header-icon {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0 .4rem 0;
+}
+
+.fw-appendix-a { background-image: url("../assets/icons/fw-special-fuggolek-gemkapocs-a-iso.svg"); }
+.fw-appendix-b { background-image: url("../assets/icons/fw-special-fuggolek-gemkapocs-b-iso.svg"); }
+.fw-appendix-c { background-image: url("../assets/icons/fw-special-fuggolek-gemkapocs-c-iso.svg"); }
+.fw-appendix-d { background-image: url("../assets/icons/fw-special-fuggolek-gemkapocs-d-iso.svg"); }
+
+/* E) Block icon span osztályok */
+[class*="fw-block-icon-main-"] {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: 0 .35rem 0 0;
+  vertical-align: -0.2em;
+}
+
+.fw-block-icon-main-kezdolap { background-image: url("../assets/icons/fw-main-kezdolap-dashboard-iso.svg"); }
+.fw-block-icon-main-gyors-attekintes { background-image: url("../assets/icons/fw-main-gyors-attekintes-villam-iso.svg"); }
+.fw-block-icon-main-dokumentacios-hub,
+.fw-block-icon-main-dokumentacios-blokkok { background-image: url("../assets/icons/fw-main-dokumentacios-hub-iso.svg"); }
+.fw-block-icon-main-letoltesek { background-image: url("../assets/icons/fw-main-letoltesek-fagyott-fa-iso.svg"); }
+.fw-block-icon-main-alapok { background-image: url("../assets/icons/fw-main-alapok-retegzett-kocka-iso.svg"); }
+.fw-block-icon-main-rendszer { background-image: url("../assets/icons/fw-main-rendszer-fogaskerekek-iso.svg"); }
+.fw-block-icon-main-alkalmazasok { background-image: url("../assets/icons/fw-main-alkalmazasok-uveglap-alkalmazasnegyzet-iso.svg"); }
+.fw-block-icon-main-referenciak { background-image: url("../assets/icons/fw-main-referenciak-archivum-mappa-iso.svg"); }
+.fw-block-icon-main-licenc { background-image: url("../assets/icons/fw-special-license-merleg-iso.svg"); }
+
+.fw-block-icon-main-rendszerdiagram { background-image: url("../assets/icons/fw-special-rendszerdiagram-tervrajz-iso.svg"); }
+.fw-block-icon-main-rendszerkartya { background-image: url("../assets/icons/fw-special-rendszerkartya-kapcsolotabla-iso.svg"); }
+
+/* F) WCAG ikon lekapcsolás */
+body.wcag-mode .md-tabs__link::before,
+body.wcag-mode .md-nav__link::before,
+body.wcag-mode .fw-module-header-icon,
+body.wcag-mode .fw-module-card-icon,
+body.wcag-mode .fw-appendix-header-icon,
+body.wcag-mode [class*="fw-block-icon-main-"],
+[data-md-color-scheme="wcag"] .md-tabs__link::before,
+[data-md-color-scheme="wcag"] .md-nav__link::before,
+[data-md-color-scheme="wcag"] .fw-module-header-icon,
+[data-md-color-scheme="wcag"] .fw-module-card-icon,
+[data-md-color-scheme="wcag"] .fw-appendix-header-icon,
+[data-md-color-scheme="wcag"] [class*="fw-block-icon-main-"] {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   H) Index és inline ikonok
+   -------------------------------------------------------------------------- */
+
+.fw-inline-icon {
+  content: "";
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: .35em;
+  vertical-align: -0.18em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex: 0 0 auto;
+}
+
+.fw-special-rendszerkartya { background-image: url("../assets/icons/fw-special-rendszerkartya-kapcsolotabla-iso.svg"); }
+.fw-special-rendszerdiagram { background-image: url("../assets/icons/fw-special-rendszerdiagram-tervrajz-iso.svg"); }
+.fw-main-letoltesek { background-image: url("../assets/icons/fw-main-letoltesek-fagyott-fa-iso.svg"); }
+
+.fw-block-card-alapok { background-image: url("../assets/icons/fw-main-alapok-retegzett-kocka-iso.svg"); }
+.fw-block-card-rendszer { background-image: url("../assets/icons/fw-main-rendszer-fogaskerekek-iso.svg"); }
+.fw-block-card-alkalmazasok { background-image: url("../assets/icons/fw-main-alkalmazasok-uveglap-alkalmazasnegyzet-iso.svg"); }
+.fw-block-card-referenciak { background-image: url("../assets/icons/fw-main-referenciak-archivum-mappa-iso.svg"); }
+
+body.wcag-mode .fw-inline-icon,
+body.wcag-mode .fw-block-card-alapok,
+body.wcag-mode .fw-block-card-rendszer,
+body.wcag-mode .fw-block-card-alkalmazasok,
+body.wcag-mode .fw-block-card-referenciak,
+[data-md-color-scheme="wcag"] .fw-inline-icon,
+[data-md-color-scheme="wcag"] .fw-block-card-alapok,
+[data-md-color-scheme="wcag"] .fw-block-card-rendszer,
+[data-md-color-scheme="wcag"] .fw-block-card-alkalmazasok,
+[data-md-color-scheme="wcag"] .fw-block-card-referenciak {
+  display: none !important;
+}
+
+/* G) Legacy index ikonok – későbbi döntés
+   A régi .frostwood-index-cards / data-modul alapú ikonozás nincs aktív állapotban.
+*/

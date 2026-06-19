@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="fw-doc-hub-v3-title fw-doc-hub-v3-desc" shape-rendering="geometricPrecision">
+  <title id="fw-doc-hub-v3-title">Frostwood Dokumentációs Hub</title>
+  <desc id="fw-doc-hub-v3-desc">Központi gyűjtőikon, amely a négy fő Frostwood dokumentációs blokkot tartalmazó mappát ábrázolja izometrikus stílusban, 32 pixeles navigációs használatra finomítva.</desc>
+
+  <defs>
+    <linearGradient id="fw-doc-hub-v3-bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+
+    <linearGradient id="fw-doc-hub-v3-baseTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F8FB"/>
+      <stop offset="100%" stop-color="#E8EDF2"/>
+    </linearGradient>
+    <linearGradient id="fw-doc-hub-v3-baseLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DEE7EF"/>
+      <stop offset="100%" stop-color="#CED9E4"/>
+    </linearGradient>
+    <linearGradient id="fw-doc-hub-v3-baseRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5DFE9"/>
+      <stop offset="100%" stop-color="#BCC9D6"/>
+    </linearGradient>
+
+    <linearGradient id="fw-doc-hub-v3-folderTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D0DFF0"/>
+      <stop offset="100%" stop-color="#B0C4DE"/>
+    </linearGradient>
+    <linearGradient id="fw-doc-hub-v3-folderLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B4CBE3"/>
+      <stop offset="100%" stop-color="#87A7C3"/>
+    </linearGradient>
+    <linearGradient id="fw-doc-hub-v3-folderRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A6C0DB"/>
+      <stop offset="100%" stop-color="#7596B6"/>
+    </linearGradient>
+    <linearGradient id="fw-doc-hub-v3-front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C8DBED"/>
+      <stop offset="100%" stop-color="#96B3CF"/>
+    </linearGradient>
+
+    <filter id="fw-doc-hub-v3-softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+
+    <style>
+      .bg-panel { fill: url(#fw-doc-hub-v3-bgLight); }
+      .shadow { fill: #8FA3B5; opacity: 0.15; }
+
+      .sketch {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .main {
+        stroke-width: 1.9;
+      }
+
+      .minor {
+        fill: none;
+        stroke-width: 0.95;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+        opacity: 0.34;
+      }
+
+      .base-top { fill: url(#fw-doc-hub-v3-baseTop); stroke: #687F95; }
+      .base-left { fill: url(#fw-doc-hub-v3-baseLeft); stroke: #687F95; }
+      .base-right { fill: url(#fw-doc-hub-v3-baseRight); stroke: #687F95; }
+
+      .folder-back  { fill: #A7BDD7; stroke: #4F6C88; }
+      .folder-top   { fill: url(#fw-doc-hub-v3-folderTop); stroke: #4F6C88; }
+      .folder-left  { fill: #8DACC8; stroke: #4F6C88; }
+      .folder-right { fill: url(#fw-doc-hub-v3-folderRight); stroke: #4F6C88; }
+      .folder-front { fill: url(#fw-doc-hub-v3-front); stroke: #4F6C88; }
+      .folder-lip   { fill: rgba(255,255,255,0.28); stroke: #4F6C88; }
+
+      .sk-line { stroke: #415A70; }
+      .white-line { stroke: rgba(255,255,255,0.62); }
+
+      .tab-a   { fill: #5A7FA6; stroke: #415A70; }
+      .tab-r   { fill: #757575; stroke: #505050; }
+      .tab-app { fill: #E0E0E0; stroke: #6E6E6E; }
+      .tab-ref { fill: #E8A86A; stroke: #A66A33; }
+
+      .decorative-guide {
+        fill: none;
+        stroke: #AAB8C7;
+        stroke-width: 1.15;
+        opacity: 0.12;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .bg-panel { fill: #252525; }
+        .shadow { fill: #000000; opacity: 0.22; }
+
+        .base-top,.base-left,.base-right,
+        .folder-back,.folder-top,.folder-left,.folder-right,.folder-front,.folder-lip,
+        .tab-a,.tab-r,.tab-app,.tab-ref {
+          stroke: #D7E1EA;
+        }
+
+        .sk-line { stroke: #D7E1EA; opacity: 0.28; }
+        .white-line { stroke: rgba(255,255,255,0.34); }
+        .decorative-guide { stroke: #536577; opacity: 0.22; }
+        .tab-app { stroke: #DADADA; }
+      }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="34" class="bg-panel"/>
+  <ellipse class="shadow" cx="256" cy="400" rx="144" ry="34" filter="url(#fw-doc-hub-v3-softShadow)" aria-hidden="true"/>
+
+  <g aria-hidden="true" class="decorative-guide">
+    <path d="M122 149 219 96 316 149 219 202Z"/>
+    <path d="M122 149v56l97 53 97-53v-56"/>
+  </g>
+
+  <g id="base">
+    <polygon class="base-top sketch main" points="108,300 256,220 404,300 256,380"/>
+    <polygon class="base-left sketch main" points="108,300 256,380 256,430 108,350"/>
+    <polygon class="base-right sketch main" points="404,300 256,380 256,430 404,350"/>
+    <path class="minor sk-line" d="M135 305 256 370 377 305" aria-hidden="true"/>
+  </g>
+
+  <g id="tabs">
+    <polygon class="tab-a sketch main"   points="162,170 193,154 193,238 162,255"/>
+    <polygon class="tab-r sketch main"   points="203,150 234,134 234,229 203,245"/>
+    <polygon class="tab-app sketch main" points="244,136 275,120 275,224 244,240"/>
+    <polygon class="tab-ref sketch main" points="285,156 316,140 316,235 285,252"/>
+  </g>
+
+  <g id="folder">
+    <polygon class="folder-back sketch main" points="152,226 246,176 360,216 268,268"/>
+    <polygon class="folder-top sketch main" points="144,248 246,192 366,236 264,294"/>
+    <polygon class="folder-left sketch main" points="144,248 264,294 264,348 144,306"/>
+    <polygon class="folder-right sketch main" points="366,236 264,294 264,348 366,290"/>
+    <polygon class="folder-front sketch main" points="142,276 264,322 380,278 258,234"/>
+    <polygon class="folder-lip sketch main" points="164,260 258,228 350,260 258,296"/>
+
+    <path class="minor white-line" d="M172 253 258 224 340 253" aria-hidden="true"/>
+    <path class="minor sk-line" d="M154 282 258 320 366 282" aria-hidden="true"/>
+  </g>
+</svg>

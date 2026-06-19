@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="app33-title app33-desc">
+  <title id="app33-title">Frostwood Alkalmazások finomítás — Gemini ikon</title>
+  <desc id="app33-desc">Erősített Frostwood MI ikon: két kapcsolódó csillagkristály és fényív jelzi a Gemini modult.</desc>
+  <defs>
+    <linearGradient id="app33-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <linearGradient id="app33-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F9FB"/>
+      <stop offset="100%" stop-color="#D8E2EC"/>
+    </linearGradient>
+    <linearGradient id="app33-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5DEE8"/>
+      <stop offset="100%" stop-color="#C6D1DB"/>
+    </linearGradient>
+    <linearGradient id="app33-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C6D1DB"/>
+      <stop offset="100%" stop-color="#B2C0CD"/>
+    </linearGradient>
+    <linearGradient id="app33-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DCEBFA" stop-opacity="0.94"/>
+    </linearGradient>
+    <linearGradient id="app33-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BFD8F2"/>
+      <stop offset="100%" stop-color="#5A7FA6"/>
+    </linearGradient>
+    <linearGradient id="app33-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F7FA"/>
+      <stop offset="100%" stop-color="#8D99A6"/>
+    </linearGradient>
+    <filter id="app33-baseShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="app33-objectShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="36" fill="url(#app33-bg)"/>
+  <g aria-hidden="true" opacity="0.12" fill="none" stroke="#8D99A6" stroke-width="2">
+    <path d="M90 142 164 100 238 142 164 184Z"/>
+    <path d="M164 184v70M90 142v70l74 42 74-42v-70"/>
+    <path d="M292 100h94M292 124h68M292 148h86"/>
+  </g>
+  <ellipse cx="258" cy="394" rx="132" ry="32" fill="#8D99A6" opacity="0.18" aria-hidden="true"/>
+  <g filter="url(#app33-baseShadow)">
+    <polygon points="110,314 258,250 406,314 258,380" fill="url(#app33-top)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="110,314 110,362 258,428 258,380" fill="url(#app33-left)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="258,380 258,428 406,362 406,314" fill="url(#app33-right)" stroke="#415A70" stroke-width="3.5"/>
+  </g>
+
+  <g filter="url(#app33-objectShadow)">
+    <polygon points="138,166 330,126 390,236 198,278" fill="url(#app33-glass)" stroke="#415A70" stroke-width="5"/>
+    <polygon points="198,278 390,236 390,268 198,312" fill="#B2C0CD" stroke="#415A70" stroke-width="4"/>
+    <polygon points="138,166 198,278 198,312 138,200" fill="#C6D1DB" stroke="#415A70" stroke-width="4"/>
+    
+    <path d="M236 148 258 202 314 224 258 246 236 302 214 246 158 224 214 202z" fill="#EAF5FF" stroke="#415A70" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M326 166 344 210 388 228 344 246 326 292 308 246 264 228 308 210z" fill="#BFD8F2" stroke="#415A70" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M236 172v108M182 224h108M326 188v84M286 228h80" stroke="#FFFFFF" stroke-width="4" opacity="0.75" aria-hidden="true"/>
+    <path d="M196 306q68 42 148 0" fill="none" stroke="#E8A86A" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="236" cy="224" r="9" fill="#E8A86A" stroke="#415A70" stroke-width="3"/>
+    <circle cx="326" cy="228" r="8" fill="#5A7FA6" stroke="#415A70" stroke-width="3"/>
+
+  </g>
+</svg>

@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="fw-letoltesek-v2-title fw-letoltesek-v2-desc" shape-rendering="geometricPrecision">
+  <title id="fw-letoltesek-v2-title">Frostwood Letöltések</title>
+  <desc id="fw-letoltesek-v2-desc">Izometrikus faalapon elhelyezett, 32 pixeles navigációs használatra erősített letöltés nyíl ikon, finom jégkristály részletekkel.</desc>
+
+  <defs>
+    <linearGradient id="fw-dl-v2-bgLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#F3F6FA"/>
+    </linearGradient>
+
+    <linearGradient id="fw-dl-v2-woodTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E1C49D"/>
+      <stop offset="100%" stop-color="#D2B48C"/>
+    </linearGradient>
+    <linearGradient id="fw-dl-v2-woodLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#CAA47A"/>
+      <stop offset="100%" stop-color="#B99166"/>
+    </linearGradient>
+    <linearGradient id="fw-dl-v2-woodRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BD9365"/>
+      <stop offset="100%" stop-color="#A97C52"/>
+    </linearGradient>
+
+    <linearGradient id="fw-dl-v2-recessTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A47B51"/>
+      <stop offset="100%" stop-color="#805D3D"/>
+    </linearGradient>
+    <linearGradient id="fw-dl-v2-recessLeft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7C5738"/>
+      <stop offset="100%" stop-color="#5E4028"/>
+    </linearGradient>
+    <linearGradient id="fw-dl-v2-recessRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#735033"/>
+      <stop offset="100%" stop-color="#563821"/>
+    </linearGradient>
+
+    <linearGradient id="fw-dl-v2-arrowTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3BA82"/>
+      <stop offset="100%" stop-color="#E8A86A"/>
+    </linearGradient>
+    <linearGradient id="fw-dl-v2-arrowSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D99555"/>
+      <stop offset="100%" stop-color="#B96F35"/>
+    </linearGradient>
+
+    <filter id="fw-dl-v2-softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10"/>
+    </filter>
+
+    <style>
+      .bg-panel { fill: url(#fw-dl-v2-bgLight); }
+      .shadow { fill: #8B7A66; opacity: 0.15; }
+
+      .sketch {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .main { stroke-width: 1.75; }
+      .arrow-main { stroke-width: 2.25; }
+      .minor {
+        fill: none;
+        stroke-width: 1.2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .wood-top { fill: url(#fw-dl-v2-woodTop); stroke: #2B2B2B; }
+      .wood-left { fill: url(#fw-dl-v2-woodLeft); stroke: #2B2B2B; }
+      .wood-right { fill: url(#fw-dl-v2-woodRight); stroke: #2B2B2B; }
+
+      .recess-top { fill: url(#fw-dl-v2-recessTop); stroke: #2B2B2B; }
+      .recess-left { fill: url(#fw-dl-v2-recessLeft); stroke: #2B2B2B; }
+      .recess-right { fill: url(#fw-dl-v2-recessRight); stroke: #2B2B2B; }
+
+      .arrow-top { fill: url(#fw-dl-v2-arrowTop); stroke: #2B2B2B; }
+      .arrow-side { fill: url(#fw-dl-v2-arrowSide); stroke: #2B2B2B; }
+      .arrow-highlight { fill: none; stroke: rgba(255,255,255,0.55); stroke-width: 1.2; }
+
+      .grain { stroke: rgba(78, 51, 26, 0.48); }
+      .ice { stroke: #BFD8F2; opacity: 0.98; }
+      .spark { stroke: #DCEAF5; opacity: 0.98; }
+
+      .guide {
+        fill: none;
+        stroke: #C9D4DE;
+        stroke-width: 1.0;
+        opacity: 0.10;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .bg-panel { fill: #252525; }
+        .shadow { fill: #000000; opacity: 0.22; }
+
+        .wood-top, .wood-left, .wood-right,
+        .recess-top, .recess-left, .recess-right,
+        .arrow-top, .arrow-side {
+          stroke: #E6E6E6;
+        }
+
+        .grain { stroke: rgba(255, 237, 220, 0.24); }
+        .ice, .spark { stroke: #DCEAF5; opacity: 0.84; }
+        .guide { stroke: #536577; opacity: 0.18; }
+      }
+    </style>
+  </defs>
+
+  <rect x="16" y="16" width="480" height="480" rx="34" class="bg-panel"/>
+  <ellipse cx="256" cy="400" rx="140" ry="32" class="shadow" filter="url(#fw-dl-v2-softShadow)" aria-hidden="true"/>
+
+  <g id="decorative" aria-hidden="true" class="guide">
+    <path d="M130 160 256 92 382 160 256 228Z"/>
+    <path d="M130 160v52l126 68 126-68v-52"/>
+  </g>
+
+  <g id="base">
+    <polygon class="wood-top sketch main" points="120,294 256,220 392,294 256,368"/>
+    <polygon class="wood-left sketch main" points="120,294 256,368 256,418 120,344"/>
+    <polygon class="wood-right sketch main" points="392,294 256,368 256,418 392,344"/>
+  </g>
+
+  <g id="engraving">
+    <polygon class="recess-top sketch main" points="178,270 256,228 334,270 256,313"/>
+    <polygon class="recess-left sketch main" points="178,270 256,313 256,342 178,299"/>
+    <polygon class="recess-right sketch main" points="334,270 256,313 256,342 334,299"/>
+  </g>
+
+  <g id="arrow">
+    <polygon class="arrow-top sketch arrow-main" points="239,236 273,236 273,282 295,282 256,328 217,282 239,282"/>
+    <polygon class="arrow-side sketch main" points="273,236 286,244 286,286 305,286 295,282 273,282"/>
+    <path class="arrow-highlight sketch" d="M249 244v38l-18 1" aria-hidden="true"/>
+  </g>
+
+  <g id="grain" aria-hidden="true">
+    <path class="minor grain" d="M158 278c22-13 44-15 66-6"/>
+    <path class="minor grain" d="M292 316c24-9 48-8 70 2"/>
+  </g>
+
+  <g id="ice" aria-hidden="true">
+    <path class="minor ice" d="M198 224v18M189 233h18M193 227l11 11M204 227l-11 11"/>
+    <path class="minor spark" d="M324 226v17M316 234h17M319 229l11 11M330 229l-11 11"/>
+    <path class="minor ice" d="M342 308v15M335 315h15M338 310l10 10M348 310l-10 10"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+
+  <link rel="manifest" href="{{ 'manifest.json' | url }}">
+
+  <meta name="theme-color" content="#FBFBFB" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1C1C1C" media="(prefers-color-scheme: dark)">
+
+  <link rel="apple-touch-icon"
+        href="{{ 'assets/pwa/apple-touch-icon.png' | url }}">
+
+  <meta name="mobile-web-app-capable"
+        content="yes">
+
+  <meta name="apple-mobile-web-app-capable"
+        content="yes">
+
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('{{ "sw.js" | url }}');
+    });
+  }
+  </script>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="spec-card-title spec-card-desc">
+  <title id="spec-card-title">Frostwood Speciális elemek mesterjavítás — Rendszerkártya kapcsolótábla ikon</title>
+  <desc id="spec-card-desc">Kapcsolótábla, kapcsolók és jelzőfények ikon a Rendszerkártya modulhoz.</desc>
+  <defs>
+    <linearGradient id="spec-card-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBFBFB"/>
+      <stop offset="100%" stop-color="#EEF4FB"/>
+    </linearGradient>
+    <linearGradient id="spec-card-top" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7F9FB"/>
+      <stop offset="100%" stop-color="#D8E2EC"/>
+    </linearGradient>
+    <linearGradient id="spec-card-left" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D5DEE8"/>
+      <stop offset="100%" stop-color="#C6D1DB"/>
+    </linearGradient>
+    <linearGradient id="spec-card-right" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C6D1DB"/>
+      <stop offset="100%" stop-color="#B2C0CD"/>
+    </linearGradient>
+    <linearGradient id="spec-card-glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#DCEBFA" stop-opacity="0.96"/>
+    </linearGradient>
+    <linearGradient id="spec-card-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#BFD8F2"/>
+      <stop offset="100%" stop-color="#5A7FA6"/>
+    </linearGradient>
+    <linearGradient id="spec-card-metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4F7FA"/>
+      <stop offset="100%" stop-color="#8D99A6"/>
+    </linearGradient>
+    <filter id="spec-card-baseShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+    <filter id="spec-card-objectShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#8D99A6" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="36" fill="url(#spec-card-bg)"/>
+  <g aria-hidden="true" opacity="0.13" fill="none" stroke="#8D99A6" stroke-width="2">
+    <path d="M90 142 164 100 238 142 164 184Z"/>
+    <path d="M164 184v70M90 142v70l74 42 74-42v-70"/>
+    <path d="M292 100h94M292 124h68M292 148h86"/>
+  </g>
+  <ellipse cx="258" cy="394" rx="132" ry="32" fill="#8D99A6" opacity="0.18" aria-hidden="true"/>
+  <g filter="url(#spec-card-baseShadow)">
+    <polygon points="110,314 258,250 406,314 258,380" fill="url(#spec-card-top)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="110,314 110,362 258,428 258,380" fill="url(#spec-card-left)" stroke="#415A70" stroke-width="3.5"/>
+    <polygon points="258,380 258,428 406,362 406,314" fill="url(#spec-card-right)" stroke="#415A70" stroke-width="3.5"/>
+  </g>
+
+  <g filter="url(#spec-card-objectShadow)">
+    <polygon points="156,174 324,138 372,238 204,274" fill="url(#spec-card-metal)" stroke="#415A70" stroke-width="4"/>
+    <polygon points="204,274 372,238 372,266 204,304" fill="#B2C0CD" stroke="#415A70" stroke-width="3"/>
+    <rect x="190" y="184" width="50" height="22" rx="8" fill="#F8FBFF" stroke="#415A70" stroke-width="3"/>
+    <path d="M198 195h32" stroke="#5A7FA6" stroke-width="4" stroke-linecap="round"/>
+    <g transform="translate(246 176) rotate(-8)">
+      <rect x="0" y="0" width="20" height="52" rx="7" fill="#F8FBFF" stroke="#415A70" stroke-width="3"/>
+      <rect x="4" y="6" width="12" height="23" rx="5" fill="#E8A86A" stroke="#415A70" stroke-width="2"/>
+    </g>
+    <g transform="translate(280 168) rotate(-8)">
+      <rect x="0" y="0" width="20" height="52" rx="7" fill="#F8FBFF" stroke="#415A70" stroke-width="3"/>
+      <rect x="4" y="22" width="12" height="23" rx="5" fill="#5A7FA6" stroke="#415A70" stroke-width="2"/>
+    </g>
+    <circle cx="286" cy="236" r="24" fill="#F8FBFF" stroke="#415A70" stroke-width="4"/>
+    <circle cx="332" cy="224" r="9" fill="#7A8F82" stroke="#415A70" stroke-width="3"/>
+    <circle cx="352" cy="218" r="9" fill="#B88A5A" stroke="#415A70" stroke-width="3"/>
+    <circle cx="342" cy="246" r="9" fill="#E8A86A" stroke="#415A70" stroke-width="3"/>
+  </g>
+</svg>
