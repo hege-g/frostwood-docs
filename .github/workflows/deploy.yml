@@ -38,6 +38,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Show versions
+        run: |
+          python --version
+          pip freeze
+          mkdocs --version
+
       - name: Build site
         run: mkdocs build --strict
 
