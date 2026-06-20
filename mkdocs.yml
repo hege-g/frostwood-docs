@@ -19,7 +19,7 @@ theme:
     - navigation.tabs.sticky   # A felső menüfülek fixen fent maradnak görgetéskor
     - navigation.sections      # Az oldalsó menücsoportok vizuális szekciókra bontása
     - navigation.top           # "Vissza a tetejére" lebegő gomb megjelenítése
-    - navigation.tracking      # Az oldalsó menü automatikusan követi a görgetést
+    # - navigation.tracking      # Az oldalsó menü automatikusan követi a görgetést
     - navigation.footer        # Előző/Következő oldal léptető sáv a lap alján
 
     # --- 2. Intelligens Keresőrendszer ---
@@ -29,13 +29,13 @@ theme:
 
     # --- 3. Tartalmi és Kódblokk funkciók ---
     - content.code.copy        # Gyári másolás gomb a kódblokkok sarkában
-    - content.tooltips         # Modern buboréksúgók
+    # - content.tooltips         # Modern buboréksúgók
     - announce.dismiss         # A felső bejelentési sáv bezárásának engedélyezése
 
     # --- 4. Tartalomjegyzék és Fejléc viselkedés ---
-    - toc.follow               # A jobb oldali tartalomjegyzék követi a görgetést
-    - toc.integrate            # Beolvasztja a tartalomjegyzéket az oldalsó menübe mobilon
-    - header.autohide          # Lefelé görgetéskor elrejti, felfelé görgetéskor mutatja a fő fejlécet
+    # - toc.follow               # A jobb oldali tartalomjegyzék követi a görgetést
+    # - toc.integrate            # Beolvasztja a tartalomjegyzéket az oldalsó menübe mobilon
+    # - header.autohide          # Lefelé görgetéskor elrejti, felfelé görgetéskor mutatja a fő fejlécet
 
   palette:
     # --- VILÁGOS MÓD (Clean Paper) ---
