@@ -78,10 +78,7 @@ A dokumentáció célja:
 
 <div class="grid cards frostwood-section-cards frostwood-numbered-card" markdown>
 
--   <a class="fw-module-card-icon fw-block-card-alapok"
-       href="alapok-blokk.md#alapok-blokk"
-       aria-hidden="true"
-       tabindex="-1"></a>
+-   <span class="fw-module-card-icon fw-block-card-alapok" aria-hidden="true"></span>
 
     ### [Alapok blokk](alapok-blokk.md#alapok-blokk)
 
@@ -97,10 +94,7 @@ A dokumentáció célja:
 
     [:material-cube-send: Alapok blokk megnyitása](alapok-blokk.md#alapok-blokk){ .md-button }
 
--   <a class="fw-module-card-icon fw-block-card-rendszer"
-       href="rendszer-blokk.md#rendszer-blokk"
-       aria-hidden="true"
-       tabindex="-1"></a>
+-   <span class="fw-module-card-icon fw-block-card-rendszer" aria-hidden="true"></span>
 
     ### [Rendszer blokk](rendszer-blokk.md#rendszer-blokk)
 
@@ -116,10 +110,7 @@ A dokumentáció célja:
 
     [:material-cube-send: Rendszer blokk megnyitása](rendszer-blokk.md#rendszer-blokk){ .md-button }
 
--   <a class="fw-module-card-icon fw-block-card-alkalmazasok"
-       href="alkalmazasok-blokk.md#alkalmazasok-blokk"
-       aria-hidden="true"
-       tabindex="-1"></a>
+-   <span class="fw-module-card-icon fw-block-card-alkalmazasok" aria-hidden="true"></span>
 
     ### [Alkalmazások blokk](alkalmazasok-blokk.md#alkalmazasok-blokk)
 
@@ -134,10 +125,7 @@ A dokumentáció célja:
 
     [:material-cube-send: Alkalmazások blokk megnyitása](alkalmazasok-blokk.md#alkalmazasok-blokk){ .md-button }
 
--   <a class="fw-module-card-icon fw-block-card-referenciak"
-       href="referenciak-blokk.md#referenciak-blokk"
-       aria-hidden="true"
-       tabindex="-1"></a>
+-   <span class="fw-module-card-icon fw-block-card-referenciak" aria-hidden="true"></span>
 
     ### [Referenciák blokk](referenciak-blokk.md#referenciak-blokk)
 
